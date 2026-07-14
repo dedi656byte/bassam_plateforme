@@ -1,0 +1,32 @@
+{
+  "cart": [
+    {"name": "Visite guidée — musée national du costume", "meta": "Quantité : 2", "price": 20000, "qty": 2},
+    {"name": "Tenue pagne Kita — artisan Fatou S.", "meta": "Quantité : 1", "price": 500000, "qty": 1}
+  ],
+  "activities": [
+    {"id": "museum", "title": "Visite guidée — Musée national", "meta": "Guide qualifié · 2 heures", "category": "visite", "budget": "low", "minPrice": 5000, "maxPrice": 10000, "duration": "half", "language": "fr", "priceLabel": "5 000 – 10 000 FCFA", "cls": "tex-museenational"},
+    {"id": "pottery", "title": "Atelier poterie céramique", "meta": "Artisan du terroir · 3h", "category": "atelier", "budget": "mid", "minPrice": 10000, "maxPrice": 25000, "duration": "half", "language": "fr", "priceLabel": "10 000 – 25 000 FCFA", "cls": "tex-poterie"},
+    {"id": "abissa", "title": "Festival Abissa", "meta": "Événement annuel gratuit", "category": "evenement", "budget": "mid", "minPrice": 10000, "maxPrice": 15000, "duration": "day", "language": "fr", "priceLabel": "dès 10 000 FCFA", "cls": "tex-abissa"},
+    {"id": "pack", "title": "Pack journée complète", "meta": "Famille ou solo", "category": "forfait", "budget": "high", "minPrice": 20000, "maxPrice": 40000, "duration": "day", "language": "fr", "priceLabel": "20 000 – 40 000 FCFA", "cls": "tex-team"},
+    {"id": "weaving", "title": "Atelier tissage", "meta": "Initiation · 2h", "category": "atelier", "budget": "mid", "minPrice": 15000, "maxPrice": 15000, "duration": "half", "language": "fr", "priceLabel": "15 000 FCFA", "cls": "tex-tissage"},
+    {"id": "beach", "title": "Sortie plage et lagune", "meta": "Demi-journée", "category": "visite", "budget": "low", "minPrice": 5000, "maxPrice": 5000, "duration": "half", "language": "en", "priceLabel": "5 000 FCFA", "cls": "tex-Sortieplageetlagune"}
+  ],
+  "marketplace": [
+    {"id": "statuette", "title": "Statuette céramique", "meta": "Kouamé T.", "category": "Céramique", "artisan": "Kouamé T.", "price": 15000, "priceLabel": "15 000 FCFA", "cls": "tex-statuette"},
+    {"id": "kita", "title": "Tenue pagne Kita", "meta": "Fatou S.", "category": "Textile", "artisan": "Fatou S.", "price": 500000, "priceLabel": "500 000 FCFA", "cls": "tex-kita"},
+    {"id": "mask", "title": "Masque traditionnel", "meta": "Diallo K.", "category": "Art", "artisan": "Diallo K.", "price": 80000, "priceLabel": "80 000 FCFA", "cls": "tex-Masquetraditionnel"},
+    {"id": "necklace", "title": "Collier perles locales", "meta": "Marie A.", "category": "Bijoux", "artisan": "Marie A.", "price": 8000, "priceLabel": "8 000 FCFA", "cls": "tex-Collierperleslocales"},
+    {"id": "spices", "title": "Coffret épices et condiments", "meta": "Cadeau gourmand", "category": "Gastronomie", "artisan": "Cadeau gourmand", "price": 12000, "priceLabel": "12 000 FCFA", "cls": "tex-Coffretepicesetcondiments"},
+    {"id": "painting", "title": "Peinture sur toile", "meta": "Brou E.", "category": "Art", "artisan": "Brou E.", "price": 120000, "priceLabel": "120 000 FCFA", "cls": "tex-Peinturesurtoile"}
+  ],
+  "lodging": [
+    {"id": "bassam", "title": "Hôtel Bassam Beach", "meta": "Vue mer · wifi", "category": "Hébergement", "budget": "high", "people": 2, "price": 120000, "priceLabel": "120 000 FCFA / nuit", "cls": "tex-HotelBassamBeach"},
+    {"id": "guesthouse", "title": "Lodge – Maison d’hôtes", "meta": "Quartier France", "category": "Hébergement", "budget": "mid", "people": 2, "price": 35000, "priceLabel": "35 000 FCFA / nuit", "cls": "tex-LodgeMaisondhôtes"},
+    {"id": "lagoon", "title": "Case en bord de lagune", "meta": "Éco-lodge, vue lagunaire", "category": "Hébergement", "budget": "low", "people": 4, "price": 25000, "priceLabel": "25 000 FCFA / nuit", "cls": "tex-Caseenborddelagune"}
+  ],
+  "restaurant": [
+    {"id": "colonial", "title": "Restaurant Le Colonial", "meta": "Gastronomie franco-ivoirienne", "category": "Restauration", "budget": "mid", "people": 2, "price": 8000, "priceLabel": "dès 8 000 FCFA", "cls": "tex-RestaurantLeColonial"},
+    {"id": "mama", "title": "Maquis chez Mama", "meta": "Poisson braisé, kedjenou", "category": "Restauration", "budget": "low", "people": 2, "price": 3000, "priceLabel": "dès 3 000 FCFA", "cls": "tex-MaquischezMama"},
+    {"id": "saveurs", "title": "Traiteur Saveurs d’Ivoire", "meta": "Buffet événementiel sur réservation", "category": "Restauration", "budget": "high", "people": 4, "price": 0, "priceLabel": "Sur devis", "cls": "tex-TraiteurSaveursdIvoire"}
+  ]
+}

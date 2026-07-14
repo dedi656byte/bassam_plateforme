@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand-Bassam | Activités, artisanat et séjour au bord de la mer</title>
+<meta name="description" content="Réservez des activités, produits artisanaux, hébergements et expériences à Grand-Bassam, cité balnéaire UNESCO.">
+<meta name="keywords" content="Grand-Bassam, tourisme Grand-Bassam, activités Grand-Bassam, artisanat local, hébergement Grand-Bassam, réservation Grand-Bassam">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#172E33">
+<meta property="og:title" content="Grand-Bassam | Activités, artisanat et séjour au bord de la mer">
+<meta property="og:description" content="Découvrez et réservez des activités, produits artisanaux et hébergements à Grand-Bassam.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Grand-Bassam | Activités, artisanat et séjour au bord de la mer">
+<meta property="twitter:description" content="Réservez des activités, produits artisanaux et hébergements à Grand-Bassam.">
+<link rel="canonical" href="index.html">
+<link rel="alternate" hreflang="fr" href="index.html">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F1E3;
+    --surface:#FFFFFF;
+    --surface-alt:#FBF7EC;
+    --ink:#20303A;
+    --ink-soft:#4B5A61;
+    --muted:#7A6F60;
+    --header:#172E33;
+    --header-2:#21454B;
+    --accent:#B8532E;
+    --accent-dark:#973F21;
+    --gold:#D8A23A;
+    --gold-deep:#B57F1E;
+    --line:#E6DCC3;
+    --line-soft:#EFE8D6;
+    --radius:14px;
+    --shadow:0 10px 30px -14px rgba(23,46,51,.25);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+    color:var(--ink);
+    letter-spacing:-.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  img{max-width:100%;display:block;}
+
+  /* ---------- layout shell ---------- */
+  .shell{max-width:1380px;margin:0 auto;padding:0 32px;}
+  @media (max-width:760px){.shell{padding:0 18px;}}
+
+  /* ---------- header ---------- */
+  .topbar{background:var(--header);color:#EAE3D3;font-size:12px;letter-spacing:.04em;}
+  .topbar .shell{display:flex;justify-content:flex-end;gap:20px;padding-top:8px;padding-bottom:8px;opacity:.75;}
+  header.mainnav{background:var(--header);border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:40;}
+  .mainnav .shell{display:flex;align-items:center;gap:28px;padding:16px 32px;}
+  .brand{display:flex;align-items:center;gap:12px;margin-right:auto;cursor:pointer;}
+  .brand .mark{
+    width:40px;height:40px;border-radius:50%;
+    background:radial-gradient(circle at 32% 28%, #F0C463, var(--gold-deep));
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.25);
+    flex:none;
+  }
+  .brand .word{display:flex;flex-direction:column;line-height:1.15;}
+  .brand .word b{font-family:'Fraunces',serif;font-size:19px;color:#F6F1E4;font-weight:600;}
+  .brand .word span{font-size:9.5px;letter-spacing:.16em;color:#B9AF98;font-weight:600;}
+  nav.links{display:flex;gap:22px;font-size:14.5px;color:#CBC3AE;}
+  nav.links a{padding:6px 2px;border-bottom:2px solid transparent;transition:.15s;white-space:nowrap;}
+  nav.links a:hover{color:#F6F1E4;}
+  nav.links a.active{color:#F1A15A;border-color:var(--accent);}
+  .nav-actions{display:flex;align-items:center;gap:12px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:11px 20px;border-radius:999px;font-size:14px;font-weight:700;
+    border:1px solid transparent;transition:.15s;white-space:nowrap;
+  }
+  .btn-fill{background:var(--accent);color:#FBF3E9;}
+  .btn-fill:hover{background:var(--accent-dark);}
+  .btn-outline-dark{border-color:rgba(255,255,255,.35);color:#F6F1E4;background:transparent;}
+  .btn-outline-dark:hover{background:rgba(255,255,255,.08);}
+  .btn-outline{border-color:var(--line);color:var(--ink);background:transparent;}
+  .btn-outline:hover{background:var(--surface-alt);}
+  .btn-block{width:100%;}
+  .cart-btn{position:relative;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;background:transparent;flex:none;}
+  .cart-btn svg{width:17px;height:17px;stroke:#F6F1E4;}
+  .cart-badge{position:absolute;top:-6px;right:-6px;background:var(--accent);color:#fff;font-size:10px;font-weight:800;min-width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0 3px;}
+  .burger{display:none;background:none;border:none;padding:8px;}
+  .burger svg{width:22px;height:22px;stroke:#F6F1E4;}
+  @media (max-width:980px){
+    nav.links{display:none;}
+    .burger{display:flex;}
+    .mainnav .shell{flex-wrap:wrap;gap:12px 16px;padding:12px 18px;}
+    .nav-actions{margin-left:auto;flex-wrap:wrap;justify-content:flex-end;}
+  }
+  @media (max-width:760px){
+    .topbar .shell{justify-content:center;flex-wrap:wrap;gap:8px 14px;}
+    .shell{padding:0 18px;}
+    .hero .content{padding:28px 22px;}
+    .stats{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .pay-options{grid-template-columns:1fr;}
+    .cart-row{flex-direction:column;align-items:flex-start;}
+    .cart-row > div:last-child{width:100%;flex-wrap:wrap;justify-content:flex-start;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:600px){
+    .btn span.long{display:none;}
+    .brand .word span{display:none;}
+    .mainnav .shell{padding:12px 14px;}
+    .btn{padding:10px 16px;font-size:13px;}
+    .filters{grid-template-columns:1fr;}
+    .grid-3,.grid-2{grid-template-columns:1fr;}
+    .hero h1{font-size:28px;}
+    .stats{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .form-panel,.panel,.card .body{padding-left:16px;padding-right:16px;}
+  }
+
+  /* ---------- generic sections ---------- */
+  .page{padding:44px 0 90px;}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+  .lede{color:var(--muted);font-size:15.5px;max-width:600px;margin-top:10px;line-height:1.6;}
+  .section-head{margin:56px 0 22px;}
+  .section-head h2{font-size:26px;}
+
+  /* ---------- textile pattern placeholders (signature element) ---------- */
+  .photo{position:relative;border-radius:12px;overflow:hidden;background-size:22px 22px;isolation:isolate;min-height:160px;background:#E4D9B6;}
+  .photo::after{content:attr(data-tag);position:absolute;left:10px;bottom:10px;background:rgba(23,46,51,.72);color:#F6F1E4;font-size:10.5px;font-weight:700;letter-spacing:.05em;padding:5px 10px;border-radius:999px;z-index:2;}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .tex-wave{background-image:repeating-linear-gradient(115deg,#BFD8D6 0 10px,#8FB9BB 10px 20px,#4E8B93 20px 30px);}
+  .tex-clay{background-image:radial-gradient(#C97A48 2.4px, transparent 2.6px),radial-gradient(#E4A868 2.4px, transparent 2.6px);background-position:0 0,11px 11px;background-color:#F0DCC0;background-size:22px 22px;}
+  .tex-kita{background-image:repeating-linear-gradient(90deg,#D8A23A 0 8px,#B8532E 8px 16px,#3E6C57 16px 24px,#F6EFDD 24px 32px);}
+  .tex-wood{background-image:repeating-linear-gradient(45deg,#6E4A34 0 12px,#8C6142 12px 24px);}
+  .tex-lodge{background-image:linear-gradient(135deg,#DDEDE9 25%, transparent 25%) -11px 0,linear-gradient(225deg,#DDEDE9 25%, transparent 25%) -11px 0,linear-gradient(315deg,#DDEDE9 25%, transparent 25%),linear-gradient(45deg,#DDEDE9 25%, transparent 25%);background-size:22px 22px;background-color:#3E6C63;}
+  .tex-food{background-image:repeating-conic-gradient(#E7A34C 0 90deg, #C15A2E 0 180deg);background-size:20px 20px;}
+  .tex-stone{background-image:linear-gradient(#00000012 1px, transparent 1px),linear-gradient(90deg,#00000012 1px, transparent 1px);background-color:#C9BC9E;background-size:24px 24px;}
+  .tex-map{background-image:linear-gradient(#00000010 1px, transparent 1px),linear-gradient(90deg,#00000010 1px, transparent 1px);background-color:#9FC2C6;background-size:16px 16px;}
+  .tex-bead{background-image:radial-gradient(#3E6C57 3px, transparent 3.2px),radial-gradient(#D8A23A 3px, transparent 3.2px),radial-gradient(#B8532E 3px, transparent 3.2px);background-position:0 0,8px 8px,16px 0;background-size:24px 8px;background-color:#F6EFDD;}
+  .tex-art{background-image:linear-gradient(120deg,#B8532E 0 20%,#D8A23A 20% 45%,#3E6C57 45% 70%,#4E8B93 70% 100%);}
+  .tex-abissa{background-image:repeating-linear-gradient(0deg,#EFE2C0 0 10px,#E3B15C 10px 20px),repeating-linear-gradient(90deg,#BFD8D6 0 40%,transparent 40% 60%,#BFD8D6 60% 100%);background-blend-mode:multiply;}
+  .tex-books{background-image:repeating-linear-gradient(90deg,#4E8B93 0 6px,#3E6C57 6px 12px,#B8532E 12px 18px);}
+  .tex-team{background-image:linear-gradient(#EFE8D6 2px, transparent 2px),linear-gradient(90deg,#DDEDE9 2px, transparent 2px);background-size:100% 26px,26px 100%;background-color:#F0DCC0;}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid;gap:20px;}
+  .grid-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+  @media (max-width:900px){.grid-3{grid-template-columns:repeat(2,minmax(0,1fr));} }
+  @media (max-width:600px){.grid-3,.grid-2{grid-template-columns:1fr;}}
+
+  .card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;transition:.18s;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .card .photo{aspect-ratio:16/10;border-radius:0;}
+  .card .body{padding:16px 18px 20px;}
+  .card .body h3{font-size:16.5px;margin-bottom:4px;}
+  .card .body p.meta{font-size:12.5px;color:var(--muted);margin:0 0 10px;}
+  .price{color:var(--accent-dark);font-weight:800;font-size:14.5px;}
+  .price small{font-weight:600;color:var(--muted);font-size:12px;}
+
+  /* ---------- hero ---------- */
+.hero{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+
+    background-image:
+        linear-gradient(0deg, rgba(15,28,32,.82), rgba(15,28,32,.15) 60%),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  .hero .content{padding:44px 46px;max-width:640px;color:#F6F1E4;}
+  .badge-unesco{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.04em;margin-bottom:18px;}
+  .hero h1{font-size:38px;line-height:1.12;color:#FBF7EC;}
+  .hero p{margin-top:14px;color:#DCD3BF;font-size:15px;max-width:480px;line-height:1.6;}
+  .hero .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;}
+  @media (max-width:640px){.hero h1{font-size:28px;} .hero .content{padding:30px 22px;}}
+
+  /* ---------- filters ---------- */
+  .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:20px;margin-bottom:28px;}
+  .field{min-width:0;}
+  .field label{display:block;font-size:11.5px;font-weight:700;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;}
+  .field input,.field select{width:100%;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:var(--surface-alt);font-size:14px;color:var(--ink);font-family:inherit;}
+  .field input:focus,.field select:focus{outline:2px solid var(--gold);outline-offset:1px;}
+
+  /* ---------- detail split ---------- */
+  .split{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;margin-top:38px;}
+  @media (max-width:800px){.split{grid-template-columns:1fr;}}
+  .panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:22px 24px;}
+  .panel h3{font-size:18px;margin-bottom:8px;}
+  .panel .muted-line{color:var(--muted);font-size:13.5px;margin-bottom:16px;}
+  .big-price{font-size:24px;font-weight:800;color:var(--accent-dark);}
+  .big-price small{font-size:13px;color:var(--muted);font-weight:600;}
+
+  /* ---------- steps ---------- */
+  .steps{display:flex;align-items:center;justify-content:center;gap:0;margin:30px 0 46px;}
+  .step{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;flex:1;max-width:170px;}
+  .step .dot{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;border:2px solid var(--line);color:var(--muted);background:var(--surface);z-index:1;}
+  .step.on .dot{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .step span{font-size:12.5px;color:var(--muted);font-weight:700;text-align:center;}
+  .step.on span{color:var(--ink);}
+  .step:not(:last-child)::after{content:'';position:absolute;top:19px;left:60%;width:100%;height:2px;background:var(--line);}
+  .step.on:not(:last-child)::after{background:var(--accent);}
+
+  /* ---------- cart ---------- */
+  .cart-row{display:flex;justify-content:space-between;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line-soft);gap:10px;}
+  .cart-row > div:last-child{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+  .cart-row:last-of-type{border-bottom:none;}
+  .cart-row h4{font-size:14.5px;font-weight:700;}
+  .cart-row .qty{font-size:12.5px;color:var(--muted);margin-top:2px;}
+  .cart-total{display:flex;justify-content:space-between;padding-top:16px;font-weight:800;font-size:16px;}
+  .pay-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0 20px;}
+  .pay-opt{border:1px solid var(--line);border-radius:11px;padding:14px 8px;text-align:center;font-size:12.5px;font-weight:700;background:var(--surface-alt);cursor:pointer;transition:.15s;}
+  .pay-opt.selected{border-color:var(--accent);background:#FBEEE6;color:var(--accent-dark);}
+  .pay-opt .ic{font-size:20px;display:block;margin-bottom:6px;}
+  .pay-opt small{display:block;font-weight:500;color:var(--muted);margin-top:3px;}
+
+  /* ---------- stat cards (artisan) ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:34px;}
+  @media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr);}}
+  .stat{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:20px;text-align:center;}
+  .stat b{font-family:'Fraunces',serif;font-size:26px;display:block;color:var(--accent-dark);}
+  .stat span{font-size:12px;color:var(--muted);font-weight:600;}
+  table.simple{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;}
+  table.simple th{text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:14px 18px;border-bottom:1px solid var(--line-soft);}
+  table.simple td{padding:14px 18px;font-size:14px;border-bottom:1px solid var(--line-soft);}
+  table.simple tr:last-child td{border-bottom:none;}
+
+  /* ---------- form ---------- */
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:640px){.form-grid{grid-template-columns:1fr;}}
+  .form-panel{padding:22px;}
+  .form-panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:28px;margin-top:30px;}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--header);color:#C9C1AC;margin-top:70px;padding:54px 0 26px;}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:28px;}
+  @media (max-width:760px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  .foot-grid h4{color:#F0EADA;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+  .foot-grid p{font-size:13px;line-height:1.7;color:#A69C87;max-width:280px;}
+  .foot-grid a{display:block;font-size:13.5px;padding:5px 0;color:#C9C1AC;}
+  .foot-grid a:hover{color:#F1A15A;}
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;font-size:12px;color:#8A8271;flex-wrap:wrap;gap:8px;}
+
+  .center-btn{display:flex;justify-content:center;margin-top:34px;}
+  .empty-state{background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:18px 20px;color:var(--muted);font-size:14px;}
+  .filter-summary{font-size:13px;color:var(--muted);margin:8px 0 16px;}
+  .confirmation-card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);}
+  .confirmation-card h3{font-size:24px;margin-bottom:10px;}
+  .confirmation-card p{color:var(--muted);line-height:1.7;}
+  .blog-card{cursor:pointer;transition:.18s;}
+  .blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .blog-card.active{border-color:var(--accent);box-shadow:0 10px 24px -12px rgba(184,83,46,.4);}
+  .blog-article-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;}
+  .blog-article-view{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start;}
+  .blog-article-view .detail-body{display:flex;flex-direction:column;gap:12px;}
+  .blog-article-view ul{margin:0;padding-left:18px;color:var(--muted);line-height:1.7;}
+  .blog-article-view .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--surface-alt);color:var(--accent-dark);font-size:12px;font-weight:700;width:max-content;}
+  .product-detail{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start;}
+  .product-detail .media{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px;}
+  .product-detail .info{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:24px;}
+  .product-detail .info .meta-list{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;}
+  .product-detail .info .meta-list span{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:var(--surface-alt);color:var(--accent-dark);font-size:12px;font-weight:700;}
+  @media (max-width:760px){.blog-article-view{grid-template-columns:1fr;}.product-detail{grid-template-columns:1fr;}}
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--header);color:#F6F1E4;padding:13px 24px;border-radius:999px;font-size:13.5px;font-weight:700;box-shadow:0 12px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:.25s;z-index:100;}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  .account-shell{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start;}
+  .account-card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);} 
+  .account-card h3{font-size:20px;margin-bottom:8px;} 
+  .account-card p{color:var(--muted);line-height:1.6;margin-bottom:16px;} 
+  .account-switch{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;}
+  .account-switch button{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface-alt);font-weight:700;color:var(--ink);} 
+  .account-switch button.active{background:var(--accent);color:#fff;border-color:var(--accent);} 
+  .account-note{background:var(--surface-alt);border:1px solid var(--line-soft);border-radius:var(--radius);padding:16px 18px;color:var(--muted);margin-top:18px;} 
+  @media (max-width:760px){.account-shell{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="shell"><span>FR / ENG</span><span>XOF / EUR</span><span>Commission 8–12%</span></div></div>
+
+<header class="mainnav">
+  <div class="shell">
+    <div class="brand" onclick="go('home')">
+      <div class="mark"></div>
+      <div class="word"><b>Grand-Bassam</b><span>Expériences officielles</span></div>
+    </div>
+    <nav class="links" id="navlinks">
+      <a data-p="home" onclick="go('home')">Accueil</a>
+      <a data-p="discover" onclick="go('discover')">Découvrir</a>
+      <a data-p="activities" onclick="go('activities')">Activités</a>
+      <a data-p="marketplace" onclick="go('marketplace')">Marketplace</a>
+      <a data-p="lodging" onclick="go('lodging')">Hébergement</a>
+      <a data-p="blog" onclick="go('blog')">Blog</a>
+      <a data-p="mice" onclick="go('mice')">MICE</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-outline-dark" id="authButton" onclick="go('account')"><span class="long">Connexion</span><span class="short" style="display:none">Compte</span></button>
+      <button class="btn btn-outline-dark" onclick="go('artisan')"><span class="long">Espace artisan</span><span class="short" style="display:none">Artisan</span></button>
+      <button class="btn btn-fill" onclick="go('cart')">Réserver</button>
+      <button class="cart-btn" onclick="go('cart')">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="burger" onclick="toggleMobileNav()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileNav" style="display:none;background:var(--header-2);padding:10px 22px 18px;">
+    <a onclick="go('home')" style="display:block;padding:8px 0;color:#EAE3D3;">Accueil</a>
+    <a onclick="go('discover')" style="display:block;padding:8px 0;color:#EAE3D3;">Découvrir</a>
+    <a onclick="go('activities')" style="display:block;padding:8px 0;color:#EAE3D3;">Activités</a>
+    <a onclick="go('marketplace')" style="display:block;padding:8px 0;color:#EAE3D3;">Marketplace</a>
+    <a onclick="go('lodging')" style="display:block;padding:8px 0;color:#EAE3D3;">Hébergement</a>
+    <a onclick="go('blog')" style="display:block;padding:8px 0;color:#EAE3D3;">Blog</a>
+    <a onclick="go('mice')" style="display:block;padding:8px 0;color:#EAE3D3;">MICE</a>
+    <a id="mobileAuth" onclick="go('account')" style="display:block;padding:8px 0;color:#EAE3D3;">Connexion</a>
+  </div>
+</header>
+
+<main class="shell page" id="app" role="main"></main>
+
+<footer>
+  <div class="shell">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><div class="mark" style="width:34px;height:34px;"></div><b style="font-family:'Fraunces',serif;color:#F0EADA;font-size:17px;">Grand-Bassam</b></div>
+        <p>La plateforme officielle du tourisme, de l'artisanat et des séjours à Grand-Bassam, cité balnéaire classée au patrimoine mondial de l'UNESCO.</p>
+      </div>
+      <div><h4>À propos</h4>
+        <a href="#">Qui sommes-nous</a><a href="#">Contact</a><a href="#">CGU et mentions légales</a><a href="#">Sécurité paiements</a>
+      </div>
+      <div><h4>Explorer</h4>
+        <a onclick="go('activities')">Activités et visites</a><a onclick="go('marketplace')">Marketplace artisanale</a><a onclick="go('lodging')">Hébergement</a><a onclick="go('mice')">Groupes et MICE</a>
+      </div>
+      <div><h4>Suivez-nous</h4>
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a>
+      </div>
+      <div>
+        <h4>Plan du site</h4>
+        <a onclick="go('home')">Accueil</a>
+        <a onclick="go('activities')">Activités</a>
+        <a onclick="go('marketplace')">Marketplace</a>
+        <a onclick="go('lodging')">Hébergement</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Grand-Bassam Expériences officielles — Tous droits réservés.</span>
+      <span>Paiement sécurisé · Wave · Orange Money · Visa · Mastercard</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Grand-Bassam Expériences Officielles",
+  "url": "https://example.com",
+  "description": "Plateforme officielle de réservation d'activités, artisanat et hébergements à Grand-Bassam.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Grand-Bassam",
+    "addressCountry": "CI"
+  },
+  "sameAs": [
+    "https://www.facebook.com",
+    "https://www.instagram.com"
+  ]
+}
+</script>
+
+<script>
+/* ---------------- state ---------------- */
+const fallbackData = {
+  cart: [
+    {name:'Visite guidée — musée national du costume', meta:'Quantité : 2', price:20000, qty:2},
+    {name:'Tenue pagne Kita — artisan Fatou S.', meta:'Quantité : 1', price:500000, qty:1}
+  ],
+  activities: [
+    {id:'museum', title:'Visite guidée — Musée national', meta:'Guide qualifié · 2 heures', category:'visite', budget:'low', minPrice:5000, maxPrice:10000, duration:'half', language:'fr', priceLabel:'5 000 – 10 000 FCFA', cls:'tex-museenational'},
+    {id:'pottery', title:'Atelier poterie céramique', meta:'Artisan du terroir · 3h', category:'atelier', budget:'mid', minPrice:10000, maxPrice:25000, duration:'half', language:'fr', priceLabel:'10 000 – 25 000 FCFA', cls:'tex-poterie'},
+    {id:'abissa', title:'Festival Abissa', meta:'Événement annuel gratuit', category:'evenement', budget:'mid', minPrice:10000, maxPrice:15000, duration:'day', language:'fr', priceLabel:'dès 10 000 FCFA', cls:'tex-abissa'},
+    {id:'pack', title:'Pack journée complète', meta:'Famille ou solo', category:'forfait', budget:'high', minPrice:20000, maxPrice:40000, duration:'day', language:'fr', priceLabel:'20 000 – 40 000 FCFA', cls:'tex-team'},
+    {id:'weaving', title:'Atelier tissage', meta:'Initiation · 2h', category:'atelier', budget:'mid', minPrice:15000, maxPrice:15000, duration:'half', language:'fr', priceLabel:'15 000 FCFA', cls:'tex-tissage'},
+    {id:'beach', title:'Sortie plage et lagune', meta:'Demi-journée', category:'visite', budget:'low', minPrice:5000, maxPrice:5000, duration:'half', language:'en', priceLabel:'5 000 FCFA', cls:'tex-Sortieplageetlagune'}
+  ],
+  marketplace: [
+    {id:'statuette', title:'Statuette céramique', meta:'Kouamé T.', category:'Céramique', artisan:'Kouamé T.', price:15000, priceLabel:'15 000 FCFA', cls:'tex-statuette'},
+    {id:'kita', title:'Tenue pagne Kita', meta:'Fatou S.', category:'Textile', artisan:'Fatou S.', price:500000, priceLabel:'500 000 FCFA', cls:'tex-kita'},
+    {id:'mask', title:'Masque traditionnel', meta:'Diallo K.', category:'Art', artisan:'Diallo K.', price:80000, priceLabel:'80 000 FCFA', cls:'tex-Masquetraditionnel'},
+    {id:'necklace', title:'Collier perles locales', meta:'Marie A.', category:'Bijoux', artisan:'Marie A.', price:8000, priceLabel:'8 000 FCFA', cls:'tex-Collierperleslocales'},
+    {id:'spices', title:'Coffret épices et condiments', meta:'Cadeau gourmand', category:'Gastronomie', artisan:'Cadeau gourmand', price:12000, priceLabel:'12 000 FCFA', cls:'tex-Coffretepicesetcondiments'},
+    {id:'painting', title:'Peinture sur toile', meta:'Brou E.', category:'Art', artisan:'Brou E.', price:120000, priceLabel:'120 000 FCFA', cls:'tex-Peinturesurtoile'}
+  ],
+  lodging: [
+    {id:'bassam', title:'Hôtel Bassam Beach', meta:'Vue mer · wifi', category:'Hébergement', budget:'high', people:2, price:120000, priceLabel:'120 000 FCFA / nuit', cls:'tex-HotelBassamBeach'},
+    {id:'guesthouse', title:'Lodge – Maison d’hôtes', meta:'Quartier France', category:'Hébergement', budget:'mid', people:2, price:35000, priceLabel:'35 000 FCFA / nuit', cls:'tex-LodgeMaisondhôtes'},
+    {id:'lagoon', title:'Case en bord de lagune', meta:'Éco-lodge, vue lagunaire', category:'Hébergement', budget:'low', people:4, price:25000, priceLabel:'25 000 FCFA / nuit', cls:'tex-Caseenborddelagune'}
+  ],
+  restaurant: [
+    {id:'colonial', title:'Restaurant Le Colonial', meta:'Gastronomie franco-ivoirienne', category:'Restauration', budget:'mid', people:2, price:8000, priceLabel:'dès 8 000 FCFA', cls:'tex-RestaurantLeColonial'},
+    {id:'mama', title:'Maquis chez Mama', meta:'Poisson braisé, kedjenou', category:'Restauration', budget:'low', people:2, price:3000, priceLabel:'dès 3 000 FCFA', cls:'tex-MaquischezMama'},
+    {id:'saveurs', title:'Traiteur Saveurs d’Ivoire', meta:'Buffet événementiel sur réservation', category:'Restauration', budget:'high', people:4, price:0, priceLabel:'Sur devis', cls:'tex-TraiteurSaveursdIvoire'}
+  ]
+};
+
+const cart = [];
+let activityOffers = [];
+let marketplaceItems = [];
+let lodgingStays = [];
+let restaurantOffers = [];
+let appData = fallbackData;
+let currentUser = null;
+
+const filtersState = {
+  activities:{category:'all', budget:'all', duration:'all', language:'all'},
+  marketplace:{search:'', category:'all', price:'all', artisan:'all'},
+  lodging:{arrival:'', departure:'', people:'2', budget:'all'}
+};
+let checkoutStage = 'cart';
+let selectedActivityId = '';
+let selectedMarketplaceId = '';
+let selectedLodgingId = '';
+let selectedLodgingType = 'stay';
+let selectedMiceOption = '';
+let selectedBlogArticleId = '';
+const blogArticles = [
+  {
+    id:'grand-bassam',
+    cls:'tex-article1',
+    tag:'Guide photo Grand-Bassam',
+    alt:'Guide touristique Grand-Bassam',
+    category:'Guide pratique',
+    title:'Grand-Bassam, cité balnéaire patrimoine UNESCO : pourquoi visiter cette ville ?',
+    meta:'Découvrez les meilleurs moments pour profiter de la plage, du patrimoine et des expériences locales.',
+    excerpt:'Grand-Bassam mêle douceur de vivre, culture locale, plages et artisanat. Une visite bien planifiée permet de combiner détente et découverte.',
+    intro:'Le meilleur moment pour venir est souvent entre novembre et avril, quand le climat est plus confortable pour les sorties en plein air et les visites historiques.',
+    highlights:['Profitez du quartier France pour découvrir l’histoire coloniale et les monuments emblématiques.','Préparez au moins une demi-journée pour explorer les marchés artisanaux et les spots de plage.','Les plats locaux et les maquis offrent une vraie immersion culturelle.'],
+    tips:['Réservez vos activités à l’avance si vous voyagez pendant les weekends ou les fêtes.','Prévoyez une tenue légère, un chapeau et de l’eau pour les journées en extérieur.']
+  },
+  {
+    id:'artisanat',
+    cls:'tex-article2',
+    tag:'Portrait artisan',
+    alt:'Atelier d’artisanat local',
+    category:'Artisanat',
+    title:'Visiter l’artisanat local à Grand-Bassam',
+    meta:'Des pièces uniques, des savoir-faire locaux et un cadre authentique.',
+    excerpt:'Les ateliers de la région révèlent le savoir-faire des artisans locaux à travers céramiques, textiles et objets décoratifs.',
+    intro:'Une promenade dans les ateliers permet de comprendre l’origine des matériaux, le processus de création et l’histoire du territoire.',
+    highlights:['Achetez directement auprès des artisans pour soutenir la filière locale.','Demandez à voir les étapes de fabrication pour apprécier le travail manuel.','Les objets faits main font d’excellents souvenirs et cadeaux.'],
+    tips:['Privilégiez les pièces certifiées ou accompagnées d’une explication sur leur origine.','Négociez avec respect si vous souhaitez acheter plusieurs pièces en boutique.']
+  },
+  {
+    id:'abissa',
+    cls:'tex-abissa',
+    tag:'Événement culturel',
+    alt:'Festival Abissa',
+    category:'Événements',
+    title:'Festival Abissa 2026 : dates et programme',
+    meta:'Un moment fort de la culture et de la célébration locale.',
+    excerpt:'Le festival met en avant la scène locale, la musique, les arts et les traditions partagées avec les visiteurs.',
+    intro:'Les événements de la saison attirent les familles, les groupes et les voyageurs à la recherche d’une expérience vivante et mémorable.',
+    highlights:['Vérifiez les dates officielles et les lieux de programmation à l’approche du festival.','Préparez un calendrier de visite pour combiner festival, plage et gastronomie.','Les animations sont souvent plus vivantes en fin de journée.'],
+    tips:['Arrivez tôt si vous souhaitez profiter pleinement des représentations et de la place.','Renseignez-vous sur les transports locaux pour éviter les déplacements en fin de soirée.']
+  }
+];
+
+function buildCartMeta(qty,dateValue=''){ const dateLabel = formatCartDate(dateValue); return dateLabel ? `Quantité : ${qty} · ${dateLabel}` : `Quantité : ${qty}`; }
+function makeCartItem({name, price, qty=1, type='product', itemId='', date='', meta=''}){
+  const safeName = name || 'Produit';
+  const safeQty = Number(qty) || 1;
+  const safePrice = Number(price) || 0;
+  const safeDate = date || '';
+  return {
+    id: itemId || `${type}-${safeName.toLowerCase().replace(/[^a-z0-9]+/g,'-')}-${Date.now()}-${Math.random().toString(36).slice(2,6)}`,
+    name: safeName,
+    type,
+    itemId,
+    price: safePrice,
+    qty: safeQty,
+    date: safeDate,
+    meta: meta || buildCartMeta(safeQty, safeDate)
+  };
+}
+function persistCart(){
+  if(typeof window === 'undefined' || !window.localStorage) return;
+  window.localStorage.setItem('grandbassam-cart', JSON.stringify(cart));
+}
+function hydrateCart(items=[]){
+  cart.splice(0, cart.length, ...items.map(item => makeCartItem({
+    name: item.name || item.title || 'Produit',
+    price: item.price || 0,
+    qty: item.qty || 1,
+    type: item.type || 'product',
+    itemId: item.itemId || item.id || '',
+    date: item.date || '',
+    meta: item.meta || ''
+  })));
+  updateCartBadge();
+  if(document.getElementById('cartItems')) renderCart();
+}
+function cartCount(){return cart.reduce((s,i)=>s+i.qty,0);}
+function goToInfo(){
+  if(!cart.length){ showToast('Votre panier est vide'); return; }
+  checkoutStage = 'info';
+  go('cart');
+}
+function continueToPayment(){
+  const name = document.getElementById('checkoutName')?.value.trim();
+  const email = document.getElementById('checkoutEmail')?.value.trim();
+  if(!name || !email){ showToast('Veuillez remplir vos informations'); return; }
+  checkoutStage = 'payment';
+  go('cart');
+}
+function fmt(n){return n.toLocaleString('fr-FR')+' FCFA';}
+function formatCartDate(dateValue){
+  if(!dateValue) return '';
+  const date = new Date(`${dateValue}T12:00:00`);
+  return `Date : ${date.toLocaleDateString('fr-FR')}`;
+}
+function showToast(msg){const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(window._tt); window._tt=setTimeout(()=>t.classList.remove('show'),2200);} 
+function updateCartBadge(){const el=document.getElementById('cartBadge'); if(el) el.textContent=cartCount();}
+function getStoredUsers(){ try { return JSON.parse(localStorage.getItem('grandbassam-users') || '[]'); } catch { return []; } }
+function saveStoredUsers(users){ localStorage.setItem('grandbassam-users', JSON.stringify(users)); }
+function loadCurrentUser(){ try { const raw = localStorage.getItem('grandbassam-current-user'); return raw ? JSON.parse(raw) : null; } catch { return null; } }
+function updateAuthNav(){ const authButton=document.getElementById('authButton'); const mobileAuth=document.getElementById('mobileAuth'); if(authButton){ authButton.innerHTML = currentUser ? `<span class="long">Bonjour ${currentUser.name.split(' ')[0]}</span><span class="short" style="display:none">Compte</span>` : '<span class="long">Connexion</span><span class="short" style="display:none">Compte</span>'; authButton.onclick = ()=>go('account'); }
+if(mobileAuth){ mobileAuth.textContent = currentUser ? `Compte · ${currentUser.name.split(' ')[0]}` : 'Connexion'; }
+}
+function logoutAccount(){ currentUser = null; localStorage.removeItem('grandbassam-current-user'); updateAuthNav(); showToast('Déconnecté'); go('home'); }
+function submitLoginForm(){ const email=document.getElementById('loginEmail')?.value.trim(); const password=document.getElementById('loginPassword')?.value; const users=getStoredUsers(); const user=users.find(item=>item.email.toLowerCase()===email.toLowerCase() && item.password===password); if(!user){ showToast('Identifiants incorrects'); return; } currentUser={id:user.id,name:user.name,email:user.email}; localStorage.setItem('grandbassam-current-user', JSON.stringify(currentUser)); updateAuthNav(); showToast(`Bienvenue ${user.name}`); go('home'); }
+function submitRegisterForm(){ const name=document.getElementById('registerName')?.value.trim(); const email=document.getElementById('registerEmail')?.value.trim(); const password=document.getElementById('registerPassword')?.value; const confirmPassword=document.getElementById('registerConfirmPassword')?.value; if(!name || !email || !password || !confirmPassword){ showToast('Remplissez tous les champs'); return; } if(password !== confirmPassword){ showToast('Les mots de passe ne correspondent pas'); return; } const users=getStoredUsers(); if(users.some(item=>item.email.toLowerCase()===email.toLowerCase())){ showToast('Cet e-mail est déjà utilisé'); return; } const newUser={id:'user-'+Date.now(),name,email,password}; users.push(newUser); saveStoredUsers(users); currentUser={id:newUser.id,name:newUser.name,email:newUser.email}; localStorage.setItem('grandbassam-current-user', JSON.stringify(currentUser)); updateAuthNav(); showToast(`Compte créé — bienvenue ${name}`); go('home'); }
+function addToCart(name,price,meta='Quantité : 1', dateValue='', type='product', itemId=''){ const decodedName = decodeURIComponent(name); const safeType = type || 'product'; const safeItemId = itemId || `${safeType}-${decodedName}`; const existing = cart.find(item => (item.itemId && item.itemId === safeItemId && (item.date||'') === dateValue) || (!item.itemId && item.name === decodedName && (item.date||'') === dateValue)); if(existing){existing.qty += 1;existing.meta=buildCartMeta(existing.qty, existing.date || dateValue);} else {cart.push(makeCartItem({name:decodedName,price,qty:1,type:safeType,itemId:safeItemId,date:dateValue,meta:meta || buildCartMeta(1,dateValue)}));} persistCart(); updateCartBadge(); showToast('Ajouté au panier'); }
+function changeCartQty(key,delta){const decodedKey = decodeURIComponent(key); const item=cart.find(i=>i.id===decodedKey || i.name===decodedKey); if(!item) return; item.qty += delta; if(item.qty <=0){const idx=cart.findIndex(i=>i.id===decodedKey || i.name===decodedKey); if(idx>=0) cart.splice(idx,1);} else {item.meta=buildCartMeta(item.qty, item.date || '');} persistCart(); updateCartBadge(); if(document.getElementById('cartItems')) renderCart(); }
+function removeFromCart(key){ const decodedKey = decodeURIComponent(key); const idx=cart.findIndex(i=>i.id===decodedKey || i.name===decodedKey); if(idx>=0){ cart.splice(idx,1); } persistCart(); updateCartBadge(); if(document.getElementById('cartItems')) renderCart(); showToast('Élément retiré du panier'); }
+function toggleMobileNav(){ const m=document.getElementById('mobileNav'); m.style.display = m.style.display==='none' ? 'block' : 'none'; }
+function photo(cls,tag,h,alt='', imageSrc=''){ 
+  const imageMap = {
+    'tex-lodge': 'images/hebergement.jpg',
+    'tex-food': 'images/restauration.jpg',
+    'tex-art': 'images/boutique.jpg',
+    'tex-kita': 'images/kita.jpg',
+    'tex-clay': 'images/atelierpot.jpeg',
+    'tex-poterie': 'images/ceramiques.jpeg',
+    'tex-bead': 'images/artisan.svg',
+    'tex-wood': 'images/artisan.svg',
+    'tex-tissage': 'images/ateliertissage.webp',
+    'tex-Sortieplageetlagune': 'images/Sortieplageetlagune.jpg',
+    'tex-Masquetraditionnel': 'images/Masquetraditionnel.jpeg',
+    'tex-Collierperleslocales': 'images/Collierperleslocales.png',
+    'tex-Coffretepicesetcondiments': 'images/Coffretepicesetcondiments.jpg',
+    'tex-Peinturesurtoile': 'images/Peinturesurtoile.jpg',
+    'tex-statuette' : 'images/statuette.jpg',
+    'tex-wave': 'images/adventure.svg',
+    'tex-stone': 'images/visiteguide.jpg',
+    'tex-quartierfrance': 'images/quartierfrance.jpeg',
+    'tex-museenational': 'images/museenational.jpg',
+    'tex-HotelBassamBeach': 'images/HôtelBassamBeach.webp',
+    'tex-LodgeMaisondhôtes': 'images/LodgeMaisondhôtes.jpeg',
+    'tex-RestaurantLeColonial': 'images/RestaurantLeColonial.jpg',
+    'tex-MaquischezMama': 'images/MaquischezMama.png',
+    'tex-article1': 'images/tex-article1.webp',
+    'tex-article2': 'images/tex-article2.jpg',
+    'tex-article3': 'images/tex-article3.png',
+
+    'tex-groupescolaire': 'images/groupescolaire.jpg',
+    'tex-seminaire': 'images/seminaire.jpg',
+    'tex-voyages': 'images/voyages.jpg',
+
+    'tex-Caseenborddelagune': 'images/Caseenborddelagune.webp',
+    'tex-TraiteurSaveursdIvoire': 'images/TraiteurSaveursdIvoire.jpg',
+    'tex-team': 'images/MICE.jpg',
+    'tex-abissa': 'images/abissa.webp',
+    'tex-map': 'images/carte.png',
+    'tex-books': 'images/blog.png'
+  };
+  const src = imageSrc || imageMap[cls] || 'images/adventure.svg';
+  const label = alt || tag;
+  return `<div class="photo ${cls}" data-tag="${tag}" style="height:${h||'auto'}" role="img" aria-label="${label}"><img src="${src}" alt="${label}" loading="lazy" decoding="async" width="800" height="500"></div>`;
+}
+function activityCard(cls,tag,title,meta,price,btn,activityId='', clickable=false, imageSrc='', clickHandler=''){
+  const activityAttr = activityId ? ` data-activity-id="${activityId}"` : '';
+  const resolvedHandler = clickHandler || (clickable && activityId ? `openFeaturedOffer('${activityId}')` : '');
+  const clickAttr = resolvedHandler ? ` onclick="${resolvedHandler}" style="cursor:pointer;"` : '';
+  return `<div class="card"${activityAttr}${clickAttr}>${photo(cls,tag,'', '', imageSrc)}<div class="body"><h3>${title}</h3><p class="meta">${meta}</p><div style="display:flex;justify-content:space-between;align-items:center;"><span class="price">${price}</span>${btn||''}</div></div></div>`;
+}
+function catCard(cls,tag,title,meta,page){ return `<div class="card" onclick="go('${page}')" style="cursor:pointer;">${photo(cls,tag)}<div class="body"><h3>${title}</h3><p class="meta" style="margin:0;">${meta}</p></div></div>`; }
+function handleCartActionClick(event){
+  const button = event.target.closest('[data-cart-action]');
+  if(!button) return;
+  event.preventDefault();
+  event.stopPropagation();
+  const {cartAction, title, price, itemId, cartType} = button.dataset;
+  if(!cartAction || !title) return;
+  const dateInput = button.closest('.panel')?.querySelector('input[type="date"]') || document.querySelector('#activityDetail input[type="date"]');
+  const selectedDate = dateInput?.value || '';
+  addToCart(title, Number(price) || 0, 'Quantité : 1', selectedDate, cartType || (cartAction === 'reserve' ? 'activity' : 'product'), itemId || '');
+  showToast(cartAction === 'reserve' ? 'Réservation ajoutée au panier' : 'Produit ajouté au panier');
+}
+function openFeaturedOffer(activityId){
+  selectedActivityId = activityId;
+  go('activity');
+}
+function openProductDetail(productId){
+  selectedMarketplaceId = productId;
+  go('product');
+}
+function openLodgingDetail(itemId, type='stay'){
+  selectedLodgingId = itemId;
+  selectedLodgingType = type;
+  go('lodgingdetail');
+}
+
+function getFilteredActivities(){
+  const {category,budget,duration,language}=filtersState.activities;
+  return activityOffers.filter(item=>{
+    const categoryOk = category==='all' || item.category===category;
+    const budgetOk = budget==='all' || item.budget===budget;
+    const durationOk = duration==='all' || item.duration===duration;
+    const languageOk = language==='all' || item.language===language;
+    return categoryOk && budgetOk && durationOk && languageOk;
+  });
+}
+function buildActivityCards(items){ return items.length ? items.map(item=>activityCard(item.cls,'Photo HD',item.title,item.meta,item.priceLabel,`<button type="button" class="btn btn-fill" style="padding:8px 14px;font-size:12.5px;" data-cart-action="reserve" data-title="${encodeURIComponent(item.title)}" data-price="${item.minPrice}" data-item-id="${item.id}" data-cart-type="activity">Réserver</button>`, item.id, true, '', `openFeaturedOffer('${item.id}')`)).join('') : '<div class="empty-state">Aucune activité ne correspond à ces filtres pour le moment.</div>'; }
+function buildMarketplaceCards(items){ return items.length ? items.map(item=>activityCard(item.cls,'Produit',item.title,item.meta,item.priceLabel,`<button type="button" class="btn btn-fill" style="padding:8px 12px;font-size:12px;" data-cart-action="add" data-title="${encodeURIComponent(item.title)}" data-price="${item.price}" data-item-id="${item.id}" data-cart-type="product">Ajouter</button>`, item.id, true, item.image || '', `openProductDetail('${item.id}')`)).join('') : '<div class="empty-state">Aucun produit ne correspond à votre recherche.</div>'; }
+function getFilteredMarketplace(){
+  const {search, category, price, artisan}=filtersState.marketplace;
+  const q=search.trim().toLowerCase();
+  return marketplaceItems.filter(item=>{
+    const searchOk = !q || item.title.toLowerCase().includes(q) || item.meta.toLowerCase().includes(q) || item.category.toLowerCase().includes(q);
+    const categoryOk = category==='all' || item.category===category;
+    const priceOk = price==='all' || (price==='under5' && item.price < 5000) || (price==='5to25' && item.price >= 5000 && item.price <= 25000) || (price==='over25' && item.price > 25000);
+    const artisanOk = artisan==='all' || item.artisan===artisan;
+    return searchOk && categoryOk && priceOk && artisanOk;
+  });
+}
+function getFilteredLodging(){
+  const {budget, people}=filtersState.lodging;
+  const peopleNum = Number(people) || 2;
+  return {
+    stays: lodgingStays.filter(item=> (budget==='all' || item.budget===budget) && item.people<=peopleNum),
+    restaurants: restaurantOffers.filter(item=> (budget==='all' || item.budget===budget) && item.people<=peopleNum)
+  };
+}
+function renderActivityDetail(item){
+  if(!item) return '';
+  return `
+    <div class="photo ${item.cls}" data-tag="Activité" style="height:230px;"></div>
+    <h3 style="margin-top:16px;">${item.title}</h3>
+    <p class="muted-line">${item.meta} · ${item.category}</p>
+    <div class="big-price">${item.priceLabel} <small>/ personne</small></div>
+    <p class="muted-line" style="margin-top:12px;">Découvrez cette expérience avec un guide local, un programme adapté à votre rythme et une immersion dans les traditions de Grand-Bassam.</p>
+    <div class="field" style="margin-bottom:14px;"><label style="display:block;margin-bottom:6px;font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;">Date de réservation</label><input type="date" placeholder="Sélectionner une date"></div>
+    <button type="button" class="btn btn-fill btn-block" data-cart-action="reserve" data-title="${encodeURIComponent(item.title)}" data-price="${item.minPrice}" data-item-id="${item.id}" data-cart-type="activity">Réserver cette offre</button>`;
+}
+function updateActivitiesView(){
+  const items=getFilteredActivities();
+  const container=document.getElementById('activityResults');
+  if(container){ container.innerHTML=buildActivityCards(items); }
+  const summary=document.getElementById('activitySummary');
+  if(summary){ summary.textContent = items.length ? `${items.length} activité${items.length>1?'s':''} disponible${items.length>1?'s':''} selon vos critères.` : 'Aucune activité ne correspond à vos filtres.'; }
+  const availableIds = items.map(item=>item.id);
+  if(selectedActivityId && !availableIds.includes(selectedActivityId)) selectedActivityId = items[0]?.id || activityOffers[0]?.id || '';
+  if(!selectedActivityId && items[0]) selectedActivityId = items[0].id;
+  const preview=document.getElementById('activityPreview');
+  const detail=document.getElementById('activityDetail');
+  const featured = items.find(item=>item.id===selectedActivityId) || items[0] || activityOffers[0];
+  if(preview){ preview.innerHTML=`${photo(featured.cls,'Photo HD','230px')}<h3 style="margin-top:16px;">${featured.title}</h3><p class="muted-line">${featured.meta}</p><button class="btn btn-outline" onclick="showToast('Galerie photo ouverte')">Galerie photo 1/6</button>`; }
+  if(detail){ detail.innerHTML=renderActivityDetail(featured); }
+}
+function updateMarketplaceView(){
+  const items=getFilteredMarketplace();
+  const container=document.getElementById('marketplaceResults');
+  if(container){ container.innerHTML=buildMarketplaceCards(items); }
+  const summary=document.getElementById('marketplaceSummary');
+  if(summary){ summary.textContent = items.length ? `${items.length} produit${items.length>1?'s':''} disponible${items.length>1?'s':''} selon vos critères.` : 'Aucun produit ne correspond à votre recherche.'; }
+  const detail=document.getElementById('marketplaceDetail');
+  if(detail){
+    const featured = items.find(item=>item.id===selectedMarketplaceId) || items[0] || marketplaceItems[0];
+    selectedMarketplaceId = featured?.id || '';
+    if(!featured){ detail.innerHTML=''; return; }
+    detail.innerHTML=`${photo(featured.cls,'Produit','230px',featured.title, featured.image || '')}<div class="big-price">${featured.priceLabel}</div><h3 style="margin-top:16px;">${featured.title}</h3><p class="muted-line" style="margin-top:6px;">${featured.meta} · ${featured.category}</p><p class="muted-line">Produit artisanal certifié, expédié rapidement et accompagné d’une facture pour votre traçabilité.</p><div style="display:flex;flex-direction:column;gap:10px;"><button type="button" class="btn btn-fill btn-block" data-cart-action="add" data-title="${encodeURIComponent(featured.title)}" data-price="${featured.price}" data-item-id="${featured.id}" data-cart-type="product">Ajouter au panier</button><button type="button" class="btn btn-outline btn-block" onclick="openProductDetail('${featured.id}')">Voir le détail</button></div>`;
+  }
+}
+function updateLodgingView(){
+  const {stays, restaurants}=getFilteredLodging();
+  const stayContainer=document.getElementById('lodgingResults');
+  if(stayContainer){ stayContainer.innerHTML = stays.length ? stays.map(item=>activityCard(item.cls,'Photo HD',item.title,item.meta,item.priceLabel,`<button type="button" class="btn btn-outline" style="padding:8px 12px;font-size:12px;" data-cart-action="reserve" data-title="${encodeURIComponent(item.title)}" data-price="${item.price}">Réserver</button>`, item.id, true, '', `openLodgingDetail('${item.id}', 'stay')`)).join('') : '<div class="empty-state">Aucun hébergement ne correspond à votre sélection.</div>'; }
+  const restaurantContainer=document.getElementById('restaurantResults');
+  if(restaurantContainer){ restaurantContainer.innerHTML = restaurants.length ? restaurants.map(item=>activityCard(item.cls,'Photo HD',item.title,item.meta,item.priceLabel,`<button type="button" class="btn btn-outline" style="padding:8px 12px;font-size:12px;" data-cart-action="reserve" data-title="${encodeURIComponent(item.title)}" data-price="${item.price}">Réserver</button>`, item.id, true, '', `openLodgingDetail('${item.id}', 'restaurant')`)).join('') : '<div class="empty-state">Aucune restauration ne correspond à cette sélection.</div>'; }
+  const summary=document.getElementById('lodgingSummary');
+  if(summary){ summary.textContent = `Affichage basé sur ${filtersState.lodging.people || '2'} personne(s) et un budget ${filtersState.lodging.budget==='all' ? 'indifférent' : filtersState.lodging.budget}.`; }
+}
+function submitMiceRequest(){ const org=document.getElementById('miceOrg')?.value.trim(); const contact=document.getElementById('miceContact')?.value.trim(); if(!org || !contact){ showToast('Merci de remplir les champs obligatoires'); return; } showToast('Demande de devis envoyée'); document.getElementById('miceOrg').value=''; document.getElementById('miceContact').value=''; document.getElementById('miceType').value=''; document.getElementById('miceDates').value=''; document.getElementById('miceServices').value=''; }
+function selectMiceOption(option){ selectedMiceOption = option; go('mice'); }
+async function addArtisanProduct(){
+  const title = document.getElementById('artisanProductName')?.value.trim();
+  const price = Number(document.getElementById('artisanProductPrice')?.value);
+  const category = document.getElementById('artisanProductCategory')?.value.trim();
+  const artisan = document.getElementById('artisanProductArtisan')?.value.trim();
+  const description = document.getElementById('artisanProductDescription')?.value.trim();
+  const imageInput = document.getElementById('artisanProductImage');
+  const imageFile = imageInput?.files?.[0];
+  let imageData = '';
+
+  if(!title || !price || !category || !artisan){ showToast('Remplissez les champs obligatoires'); return; }
+
+  if(imageFile){
+    try {
+      imageData = await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result || '');
+        reader.onerror = () => reject(new Error('Impossible de lire l’image'));
+        reader.readAsDataURL(imageFile);
+      });
+    } catch (error) {
+      showToast('Impossible de lire l’image sélectionnée');
+      return;
+    }
+  }
+
+  const newProduct = {
+    id:'custom-' + Date.now(),
+    title,
+    meta: description || 'Produit ajouté depuis l’espace artisan',
+    category,
+    artisan,
+    price,
+    priceLabel: `${price.toLocaleString('fr-FR')} FCFA`,
+    cls:'tex-art',
+    image: imageData
+  };
+  marketplaceItems.unshift(newProduct);
+  if(appData.marketplace && appData.marketplace !== marketplaceItems) { appData.marketplace.unshift(newProduct); }
+  showToast('Produit ajouté à la marketplace');
+  document.getElementById('artisanProductName').value='';
+  document.getElementById('artisanProductPrice').value='';
+  document.getElementById('artisanProductCategory').value='';
+  const artisanInput = document.getElementById('artisanProductArtisan');
+  if(artisanInput){ artisanInput.value = currentUser?.name || ''; }
+  document.getElementById('artisanProductDescription').value='';
+  if(imageInput) imageInput.value='';
+  if(document.getElementById('marketplaceResults')) updateMarketplaceView();
+}
+function confirmPayment(){
+  if(!cart.length){ showToast('Votre panier est vide'); return; }
+  checkoutStage = 'confirmation';
+  go('cart');
+  showToast('Paiement confirmé — récapitulatif envoyé');
+}
+async function loadCatalog(){
+  try {
+    const response = await fetch('./data.json');
+    if(!response.ok) throw new Error('Unable to load data');
+    const data = await response.json();
+    appData = data;
+  } catch (error) {
+    appData = fallbackData;
+  }
+
+  activityOffers = Array.isArray(appData.activities) ? appData.activities : fallbackData.activities;
+  marketplaceItems = Array.isArray(appData.marketplace) ? appData.marketplace : fallbackData.marketplace;
+  lodgingStays = Array.isArray(appData.lodging) ? appData.lodging : fallbackData.lodging;
+  restaurantOffers = Array.isArray(appData.restaurant) ? appData.restaurant : fallbackData.restaurant;
+  const storedCart = typeof window !== 'undefined' && window.localStorage ? window.localStorage.getItem('grandbassam-cart') : null;
+  if(storedCart){
+    try { hydrateCart(JSON.parse(storedCart)); } catch (error) { hydrateCart(Array.isArray(appData.cart) ? appData.cart : fallbackData.cart); }
+  } else {
+    hydrateCart(Array.isArray(appData.cart) ? appData.cart : fallbackData.cart);
+  }
+  selectedActivityId = activityOffers[0]?.id || '';
+}
+
+function renderActivitiesPage(){ return `
+  <section aria-labelledby="activities-title">
+  <span class="eyebrow">Visites guidées · Ateliers · Événements · Forfaits</span>
+  <h1 id="activities-title" style="font-size:30px;">Activités et services à Grand-Bassam</h1>
+  <p class="lede">Réservez facilement des visites, ateliers et expériences locales à Grand-Bassam, avec des options adaptées aux familles, groupes et voyageurs.</p>
+  <p class="lede">Parcourez les meilleures expériences de la ville : visites historiques, ateliers artisanaux, événements culturels et formules complètes pour un séjour inoubliable.</p>
+  <div class="filters" id="activityFilters">
+    <div class="field"><label>Catégorie</label><select data-activity-filter="category"><option value="all">Toutes</option><option value="visite">Visites</option><option value="atelier">Ateliers</option><option value="evenement">Événements</option><option value="forfait">Forfaits</option></select></div>
+    <div class="field"><label>Budget</label><select data-activity-filter="budget"><option value="all">Tous</option><option value="low">&lt; 5k FCFA</option><option value="mid">5k – 25k FCFA</option><option value="high">&gt; 25k FCFA</option></select></div>
+    <div class="field"><label>Durée</label><select data-activity-filter="duration"><option value="all">Toutes</option><option value="half">Demi-journée</option><option value="day">Journée</option></select></div>
+    <div class="field"><label>Langue</label><select data-activity-filter="language"><option value="all">Toutes</option><option value="fr">Français</option><option value="en">Anglais</option></select></div>
+  </div>
+  <p class="filter-summary" id="activitySummary"></p>
+  <div class="grid grid-3" id="activityResults"></div>
+  <!--
+  <div class="split">
+    <div class="panel" id="activityPreview"></div>
+    <div class="panel" id="activityDetail"></div>
+  </div>-->
+  </section>`; }
+function renderMarketplacePage(){ return `
+  <section aria-labelledby="marketplace-title">
+  <span class="eyebrow">Céramiques · Textile · Art · Bijoux · Gastronomie locale</span>
+  <h1 id="marketplace-title" style="font-size:30px;">Boutique artisanale de Grand-Bassam</h1>
+  <p class="lede">Découvrez des produits artisanaux locaux, fabriqués à la main, avec des pièces uniques pour la décoration, les cadeaux et les souvenirs.</p>
+  <div class="filters" id="marketplaceFilters">
+    <div class="field"><label>Recherche</label><input data-marketplace-filter="search" placeholder="Rechercher un produit"></div>
+    <div class="field"><label>Catégorie</label><select data-marketplace-filter="category"><option value="all">Toutes</option><option value="Céramique">Céramique</option><option value="Textile">Textile</option><option value="Art">Art</option><option value="Bijoux">Bijoux</option><option value="Gastronomie">Gastronomie</option></select></div>
+    <div class="field"><label>Prix</label><select data-marketplace-filter="price"><option value="all">Tous</option><option value="under5">&lt; 5k FCFA</option><option value="5to25">5k – 25k FCFA</option><option value="over25">&gt; 25k FCFA</option></select></div>
+    <div class="field"><label>Artisan</label><select data-marketplace-filter="artisan"><option value="all">Tous</option><option value="Kouamé T.">Kouamé T.</option><option value="Fatou S.">Fatou S.</option><option value="Diallo K.">Diallo K.</option><option value="Marie A.">Marie A.</option><option value="Brou E.">Brou E.</option></select></div>
+  </div>
+  <p class="filter-summary" id="marketplaceSummary"></p>
+  <div class="grid grid-3" id="marketplaceResults"></div>
+  <!--
+  <div class="split">
+    <div class="panel">${photo('tex-kita','Galerie photo · Détail 1/4','230px')}<h3 style="margin-top:16px;">Description du produit</h3><p class="muted-line">Matériaux, technique artisanale, origine — artisan certifié.</p></div>
+    <div class="panel" id="marketplaceDetail"></div>
+  </div>-->
+  </section>`; }
+function renderProductDetailPage(){
+  const product = marketplaceItems.find(item => item.id === selectedMarketplaceId) || marketplaceItems[0];
+  if(!product){ return `<section><div class="empty-state">Produit introuvable.</div></section>`; }
+  return `
+    <section aria-labelledby="product-detail-title">
+      <div class="blog-article-nav">
+        <button class="btn btn-outline" onclick="go('marketplace')">← Retour à la marketplace</button>
+        <span class="pill">Produit artisanal</span>
+      </div>
+      <div class="product-detail">
+        <div class="media">
+          ${photo(product.cls, 'Produit', '360px', product.title, product.image || '')}
+        </div>
+        <div class="info">
+          <span class="eyebrow">${product.category}</span>
+          <h1 id="product-detail-title" style="font-size:30px;">${product.title}</h1>
+          <div class="meta-list">
+            <span>Artisan : ${product.artisan}</span>
+            <span>Catégorie : ${product.category}</span>
+            <span>Prix : ${product.priceLabel}</span>
+          </div>
+          <p class="muted-line" style="font-size:15px;line-height:1.7;">${product.meta || 'Produit fabriqué à la main, sélectionné avec soin pour offrir une expérience authentique à nos visiteurs.'}</p>
+          <p class="muted-line">Produit certifié, expédié rapidement et accompagné d’une facture pour votre traçabilité.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;">
+            <button type="button" class="btn btn-fill" data-cart-action="add" data-title="${encodeURIComponent(product.title)}" data-price="${product.price}" data-item-id="${product.id}" data-cart-type="product">Ajouter au panier</button>
+            <button type="button" class="btn btn-outline" onclick="go('marketplace')">Voir d’autres produits</button>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+function renderLodgingPage(){ return `
+  <section aria-labelledby="lodging-title">
+  <span class="eyebrow">Hôtels · Lodges bord de mer · Maquis · Gastronomie ivoirienne</span>
+  <h1 id="lodging-title" style="font-size:30px;">Hébergement et restauration à Grand-Bassam</h1>
+  <p class="lede">Trouvez un hébergement confortable et des repas locaux adaptés à votre séjour à Grand-Bassam.</p>
+  <div class="filters" id="lodgingFilters">
+    <div class="field"><label>Arrivée</label><input type="date" data-lodging-filter="arrival"></div>
+    <div class="field"><label>Départ</label><input type="date" data-lodging-filter="departure"></div>
+    <div class="field"><label>Personnes</label><select data-lodging-filter="people"><option value="2">2 adultes</option><option value="4">4 adultes</option><option value="6">6 adultes</option></select></div>
+    <div class="field"><label>Budget / nuit</label><select data-lodging-filter="budget"><option value="all">Tous budgets</option><option value="low">Économique</option><option value="mid">Standard</option><option value="high">Luxe</option></select></div>
+  </div>
+  <p class="filter-summary" id="lodgingSummary"></p>
+  <div class="section-head"><h2>Hébergement</h2></div>
+  <div class="grid grid-3" id="lodgingResults"></div>
+  <div class="section-head"><h2>Restauration</h2></div>
+  <div class="grid grid-3" id="restaurantResults"></div>
+  </section>`; }
+function renderActivityDetailPage(){
+  const activity = activityOffers.find(item => item.id === selectedActivityId) || activityOffers[0];
+  if(!activity){ return `<section><div class="empty-state">Activité introuvable.</div></section>`; }
+  return `
+    <section aria-labelledby="activity-detail-title">
+      <div class="blog-article-nav">
+        <button class="btn btn-outline" onclick="go('activities')">← Retour aux activités</button>
+        <span class="pill">${activity.category}</span>
+      </div>
+      <div class="product-detail">
+        <div class="media">
+          ${photo(activity.cls, 'Activité', '360px', activity.title, '')}
+        </div>
+        <div class="info">
+          <span class="eyebrow">${activity.category}</span>
+          <h1 id="activity-detail-title" style="font-size:30px;">${activity.title}</h1>
+          <div class="meta-list">
+            <span>Durée : ${activity.duration === 'half' ? 'Demi-journée' : 'Journée'}</span>
+            <span>Langue : ${activity.language === 'en' ? 'Anglais' : 'Français'}</span>
+            <span>Prix : ${activity.priceLabel}</span>
+          </div>
+          <p class="muted-line" style="font-size:15px;line-height:1.7;">${activity.meta || 'Une expérience locale, guidée par un professionnel et pensée pour découvrir Grand-Bassam autrement.'}</p>
+          <div class="field" style="margin:16px 0 18px;"><label style="display:block;margin-bottom:6px;font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;">Date de réservation</label><input type="date"></div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;">
+            <button type="button" class="btn btn-fill" data-cart-action="reserve" data-title="${encodeURIComponent(activity.title)}" data-price="${activity.minPrice}" data-item-id="${activity.id}" data-cart-type="activity">Réserver cette offre</button>
+            <button type="button" class="btn btn-outline" onclick="go('activities')">Voir les autres activités</button>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+function renderLodgingDetailPage(){
+  const items = selectedLodgingType === 'restaurant' ? restaurantOffers : lodgingStays;
+  const item = items.find(entry => entry.id === selectedLodgingId) || items[0];
+  if(!item){ return `<section><div class="empty-state">Offre introuvable.</div></section>`; }
+  return `
+    <section aria-labelledby="lodging-detail-title">
+      <div class="blog-article-nav">
+        <button class="btn btn-outline" onclick="go('lodging')">← Retour à l’hébergement</button>
+        <span class="pill">${selectedLodgingType === 'restaurant' ? 'Restauration' : 'Hébergement'}</span>
+      </div>
+      <div class="product-detail">
+        <div class="media">
+          ${photo(item.cls, 'Séjour', '360px', item.title, '')}
+        </div>
+        <div class="info">
+          <span class="eyebrow">${item.category || (selectedLodgingType === 'restaurant' ? 'Restauration' : 'Hébergement')}</span>
+          <h1 id="lodging-detail-title" style="font-size:30px;">${item.title}</h1>
+          <div class="meta-list">
+            <span>Capacité : ${item.people || '2'} personne(s)</span>
+            <span>Budget : ${item.budget || 'mid'}</span>
+            <span>Prix : ${item.priceLabel || `${item.price.toLocaleString('fr-FR')} FCFA`}</span>
+          </div>
+          <p class="muted-line" style="font-size:15px;line-height:1.7;">${item.meta || 'Une offre pensée pour profiter pleinement de votre séjour à Grand-Bassam.'}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;">
+            <button type="button" class="btn btn-fill" data-cart-action="reserve" data-title="${encodeURIComponent(item.title)}" data-price="${item.price}" data-item-id="${item.id}" data-cart-type="${selectedLodgingType === 'restaurant' ? 'restaurant' : 'lodging'}">Réserver cette offre</button>
+            <button type="button" class="btn btn-outline" onclick="go('lodging')">Voir d’autres offres</button>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
+function renderAccountPage(){
+  const isLogged = !!currentUser;
+  return `
+    <section aria-labelledby="account-title">
+      <span class="eyebrow">Compte</span>
+      <h1 id="account-title" style="font-size:30px;">Connexion et création de compte</h1>
+      <p class="lede">Créez votre compte pour réserver plus vite, suivre vos commandes et accéder à l’espace artisan.</p>
+      <div class="account-shell" style="margin-top:26px;">
+        <div class="account-card">
+          <div class="account-switch">
+            <button type="button" class="active" id="loginTab" onclick="switchAccountTab('login')">Connexion</button>
+            <button type="button" id="registerTab" onclick="switchAccountTab('register')">Créer un compte</button>
+          </div>
+          <div id="loginFormBlock">
+            <h3>Se connecter</h3>
+            <p>Accédez à votre espace personnel pour gérer vos réservations et votre profil.</p>
+            <div class="form-grid">
+              <div class="field" style="grid-column:1/-1;"><label>E-mail</label><input id="loginEmail" type="email" placeholder="nom@exemple.com"></div>
+              <div class="field" style="grid-column:1/-1;"><label>Mot de passe</label><input id="loginPassword" type="password" placeholder="Votre mot de passe"></div>
+            </div>
+            <div style="margin-top:16px;"><button class="btn btn-fill btn-block" onclick="submitLoginForm()">Se connecter</button></div>
+          </div>
+          <div id="registerFormBlock" style="display:none;">
+            <h3>Créer un compte</h3>
+            <p>Inscrivez-vous pour réserver vos expériences et publier vos produits artisanaux.</p>
+            <div class="form-grid">
+              <div class="field" style="grid-column:1/-1;"><label>Nom complet</label><input id="registerName" placeholder="Votre nom"></div>
+              <div class="field" style="grid-column:1/-1;"><label>E-mail</label><input id="registerEmail" type="email" placeholder="nom@exemple.com"></div>
+              <div class="field" style="grid-column:1/-1;"><label>Mot de passe</label><input id="registerPassword" type="password" placeholder="Minimum 4 caractères"></div>
+              <div class="field" style="grid-column:1/-1;"><label>Confirmer le mot de passe</label><input id="registerConfirmPassword" type="password" placeholder="Répétez le mot de passe"></div>
+            </div>
+            <div style="margin-top:16px;"><button class="btn btn-fill btn-block" onclick="submitRegisterForm()">Créer mon compte</button></div>
+          </div>
+        </div>
+        <div class="account-card">
+          <h3>${isLogged ? 'Bienvenue' : 'Pourquoi créer un compte ?'}</h3>
+          <p>${isLogged ? `Vous êtes connecté en tant que ${currentUser.name}.` : 'Un compte vous permet de garder vos réservations, de publier vos produits et d’accéder plus rapidement à l’espace artisan.'}</p>
+          <div class="account-note">
+            ${isLogged ? '<button class="btn btn-outline" onclick="logoutAccount()">Se déconnecter</button>' : 'Réservez vos activités, suivez vos achats et publiez vos objets faits main depuis votre espace personnel.'}
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+function switchAccountTab(tab){
+  const loginBlock=document.getElementById('loginFormBlock');
+  const registerBlock=document.getElementById('registerFormBlock');
+  const loginTab=document.getElementById('loginTab');
+  const registerTab=document.getElementById('registerTab');
+  if(tab==='register'){ loginBlock.style.display='none'; registerBlock.style.display='block'; loginTab.classList.remove('active'); registerTab.classList.add('active'); }
+  else { loginBlock.style.display='block'; registerBlock.style.display='none'; loginTab.classList.add('active'); registerTab.classList.remove('active'); }
+}
+function syncArtisanForm(){
+  const artisanInput=document.getElementById('artisanProductArtisan');
+  if(artisanInput){ artisanInput.value = currentUser?.name || ''; }
+}
+
+const pages = {
+home: () => `
+  <section aria-labelledby="home-title">
+  <div class="hero">
+    <div class="content">
+      <span class="badge-unesco">★ Patrimoine mondial UNESCO</span>
+      <h1 id="home-title">Découvrir Grand-Bassam : activités, artisanat et séjour au bord de la mer</h1>
+      <p>Plage, patrimoine colonial classé, artisanat local et gastronomie ivoirienne — à une heure d'Abidjan. Réservez facilement vos expériences à Grand-Bassam.</p>
+      <div class="actions">
+        <button class="btn btn-fill" onclick="go('cart')">Réserver maintenant</button>
+        <button class="btn btn-outline-dark" onclick="go('discover')">Voir la carte interactive</button>
+      </div>
+    </div>
+  </div>
+  <div class="section-head"><h2>Offres du moment</h2></div>
+  <div class="grid grid-3">
+    ${(activityOffers.slice(0, 3).map(item => activityCard(item.cls, 'Photo HD', item.title, item.meta, item.priceLabel, '', item.id, true)).join('')) || activityCard('tex-stone','Photo HD','Visite guidée UNESCO','Quartier France — guide qualifié','dès 5 000 FCFA', '', '', true)}
+  </div>
+  <div class="section-head"><h2>Catégories principales</h2></div>
+  <div class="grid grid-3">
+    ${catCard('tex-stone','Photo HD','Activités et visites','Guides, ateliers, événements à Grand-Bassam','activities')}
+    ${catCard('tex-art','Photo HD','Boutique artisanale','Marketplace d\'artisans locaux à Grand-Bassam','marketplace')}
+    ${catCard('tex-lodge','Photo HD','Hébergement','Hôtels partenaires — dès 20 000 FCFA/nuit','lodging')}
+    ${catCard('tex-food','Photo HD','Restauration','Maquis, gastronomie franco-ivoirienne','lodging')}
+    ${catCard('tex-team','Photo HD','Groupe et MICE','Séminaires, scolaires, incentives','mice')}
+    ${catCard('tex-books','Photo HD','Blog et actualités','Guides pratiques, conseils, récits','blog')}
+  </div>
+  </section>` ,
+discover: () => `
+  <section aria-labelledby="discover-title">
+  <span class="eyebrow">Patrimoine mondial UNESCO · Histoire · Culture</span>
+  <h1 id="discover-title" style="font-size:30px;">Découvrir Grand-Bassam : patrimoine, plage et culture</h1>
+  <p class="lede">Explorez les sites historiques, les plages et les expériences culturelles qui font de Grand-Bassam une destination unique en Côte d’Ivoire.</p>
+  <div class="grid grid-2" style="margin-top:26px;">
+    <div class="card" onclick="go('activities')" style="cursor:pointer;">${photo('tex-quartierfrance','Guide photo 1/6')}<div class="body"><h3>Points d'intérêt — quartier France</h3><p class="meta" style="margin:0;">Zone classée UNESCO — Cathédrale du Sacré-Cœur, Musée national du costume, ancien palais du gouverneur.</p></div></div>
+    <div class="card">${photo('tex-map','Carte interactive')}<div class="body"><h3>Cartographie des sites à visiter</h3><p class="meta" style="margin:0;">Infos pratiques : accès, transport, horaires et tarifs.</p></div></div>
+  </div>
+  <div class="center-btn"><button class="btn btn-fill" onclick="go('activities')">Réserver une visite guidée</button></div>
+  </section>` ,
+activities: () => renderActivitiesPage(),
+activity: () => renderActivityDetailPage(),
+marketplace: () => renderMarketplacePage(),
+product: () => renderProductDetailPage(),
+lodging: () => renderLodgingPage(),
+lodgingdetail: () => renderLodgingDetailPage(),
+cart: () => {
+  if(checkoutStage === 'confirmation') {
+    return `
+      <div class="steps">
+        <div class="step on"><div class="dot">1</div><span>Panier</span></div>
+        <div class="step on"><div class="dot">2</div><span>Informations</span></div>
+        <div class="step on"><div class="dot">3</div><span>Paiement</span></div>
+        <div class="step on"><div class="dot">4</div><span>Confirmation</span></div>
+      </div>
+      <div class="confirmation-card">
+        <h3>✅ Paiement confirmé</h3>
+        <p>Votre réservation a bien été prise en compte. Un récapitulatif a été envoyé par e-mail et par SMS.</p>
+        <div class="panel" style="margin-top:18px;">
+          <h3>Résumé de votre commande</h3>
+          <div id="cartItems"></div>
+          <div class="cart-total"><span>Total</span><span id="cartTotal"></span></div>
+        </div>
+        <div class="center-btn">
+          <button class="btn btn-fill" onclick="checkoutStage='cart'; go('home')">Retour à l’accueil</button>
+        </div>
+      </div>`;
+  }
+  if(checkoutStage === 'info') {
+    return `
+      <div class="steps">
+        <div class="step on"><div class="dot">1</div><span>Panier</span></div>
+        <div class="step on"><div class="dot">2</div><span>Informations</span></div>
+        <div class="step"><div class="dot">3</div><span>Paiement</span></div>
+        <div class="step"><div class="dot">4</div><span>Confirmation</span></div>
+      </div>
+      <div class="split" style="margin-top:0;">
+        <div class="panel"><h3>Votre panier</h3><div id="cartItems"></div><div class="cart-total"><span>Total</span><span id="cartTotal"></span></div></div>
+        <div class="panel">
+          <h3>Informations client</h3>
+          <div class="form-grid">
+            <div class="field"><label>Nom complet</label><input id="checkoutName" placeholder="Votre nom"></div>
+            <div class="field"><label>E-mail</label><input id="checkoutEmail" type="email" placeholder="nom@exemple.com"></div>
+            <div class="field"><label>Téléphone</label><input id="checkoutPhone" placeholder="+225 07 00 00 00"></div>
+            <div class="field"><label>Commentaires</label><input id="checkoutNotes" placeholder="Informations supplémentaires"></div>
+          </div>
+          <button class="btn btn-fill btn-block" style="margin-top:18px;" onclick="continueToPayment()">Continuer vers le paiement</button>
+        </div>
+      </div>`;
+  }
+  if(checkoutStage === 'payment') {
+    return `
+      <div class="steps">
+        <div class="step on"><div class="dot">1</div><span>Panier</span></div>
+        <div class="step on"><div class="dot">2</div><span>Informations</span></div>
+        <div class="step on"><div class="dot">3</div><span>Paiement</span></div>
+        <div class="step"><div class="dot">4</div><span>Confirmation</span></div>
+      </div>
+      <div class="split" style="margin-top:0;">
+        <div class="panel"><h3>Votre panier</h3><div id="cartItems"></div><div class="cart-total"><span>Total</span><span id="cartTotal"></span></div></div>
+        <div class="panel"><h3>Mode de paiement</h3><div class="pay-options"><div class="pay-opt selected" onclick="selectPay(this)"><span class="ic">💳</span>Mobile money<small>Wave, Orange Money</small></div><div class="pay-opt" onclick="selectPay(this)"><span class="ic">🏦</span>Carte bancaire<small>Visa, Mastercard</small></div><div class="pay-opt" onclick="selectPay(this)"><span class="ic">🏛️</span>Virement (B2B)<small>Groupes / MICE</small></div></div><button class="btn btn-fill btn-block" onclick="confirmPayment()">Confirmer et payer</button><p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px;">Récapitulatif PDF envoyé par e-mail et SMS instantanément</p></div>
+      </div>`;
+  }
+  return `
+    <div class="steps">
+      <div class="step on"><div class="dot">1</div><span>Panier</span></div>
+      <div class="step"><div class="dot">2</div><span>Informations</span></div>
+      <div class="step"><div class="dot">3</div><span>Paiement</span></div>
+      <div class="step"><div class="dot">4</div><span>Confirmation</span></div>
+    </div>
+    <div class="split" style="margin-top:0;">
+      <div class="panel"><h3>Votre panier</h3><div id="cartItems"></div><div class="cart-total"><span>Total</span><span id="cartTotal"></span></div></div>
+      <div class="panel"><h3>Continuer votre commande</h3><p class="muted-line">Ajoutez vos informations avant de choisir votre mode de paiement.</p><button class="btn btn-fill btn-block" onclick="goToInfo()">Passer à l’étape Informations</button></div>
+    </div>`;
+},
+account: () => renderAccountPage(),
+artisan: () => `
+  <span class="eyebrow">Espace artisan</span>
+  <h1 style="font-size:30px;">Tableau de bord vendeur</h1>
+  <div class="steps" style="margin-top:34px;"><div class="step on"><div class="dot">1</div><span>Créer un compte</span></div><div class="step on"><div class="dot">2</div><span>Profil vendeur</span></div><div class="step on"><div class="dot">3</div><span>Ajouter produits</span></div><div class="step"><div class="dot">4</div><span>Validation éditoriale</span></div><div class="step"><div class="dot">5</div><span>Vendre en ligne</span></div></div>
+  <div class="stats"><div class="stat"><b>6</b><span>Commandes en attente</span></div><div class="stat"><b>15</b><span>Produits en ligne</span></div><div class="stat"><b>120 000 FCFA</b><span>Revenus ce mois</span></div><div class="stat"><b>8–12%</b><span>Commission plateforme</span></div></div>
+  <div class="form-panel">
+    <h3 style="margin-bottom:18px;">Ajouter un nouveau produit</h3>
+    <div class="form-grid">
+      <div class="field"><label>Nom du produit *</label><input id="artisanProductName" placeholder="Nom du produit"></div>
+      <div class="field"><label>Prix (FCFA) *</label><input id="artisanProductPrice" type="number" placeholder="15000"></div>
+      <div class="field"><label>Catégorie *</label><select id="artisanProductCategory"><option value="">Sélectionner</option><option value="Céramique">Céramique</option><option value="Textile">Textile</option><option value="Art">Art</option><option value="Bijoux">Bijoux</option><option value="Gastronomie">Gastronomie</option></select></div>
+      <div class="field"><label>Artisan *</label><input id="artisanProductArtisan" value="${currentUser?.name || ''}" placeholder="Votre nom"></div>
+      <div class="field" style="grid-column:1/-1;"><label>Image du produit</label><input id="artisanProductImage" type="file" accept="image/*"></div>
+      <div class="field" style="grid-column:1/-1;"><label>Description</label><input id="artisanProductDescription" placeholder="Description du produit"></div>
+    </div>
+    <div style="margin-top:18px;"><button class="btn btn-fill" onclick="addArtisanProduct()">Publier le produit</button></div>
+  </div>
+  <table class="simple"><tr><th>Type de vente</th><th>Commission</th><th>Formule Premium — 15 000 FCFA/mois</th></tr><tr><td>Produits artisanaux</td><td>8 % – 12 % du montant HT</td><td>Plus de visibilité et publicité</td></tr><tr><td>Réservation et activités</td><td>10 % – 15 %</td><td>Référencement prioritaire</td></tr><tr><td>Hébergement partenaire</td><td>5 % – 8 % la nuitée</td><td>Suivi personnalisé</td></tr></table>` ,
+blog: () => {
+  const article = blogArticles.find(item => item.id === selectedBlogArticleId);
+  if(article){
+    return `
+      <section aria-labelledby="blog-article-title">
+        <div class="blog-article-nav">
+          <button class="btn btn-outline" onclick="selectedBlogArticleId=''; go('blog')">← Retour aux articles</button>
+          <span class="pill">${article.category}</span>
+        </div>
+        <div class="blog-article-view">
+          <div class="panel" style="padding:24px;">
+            <div class="detail-body">
+              <h1 id="blog-article-title" style="font-size:30px;">${article.title}</h1>
+              <p class="meta" style="margin-top:10px;">${article.meta}</p>
+              <p class="muted-line" style="margin-top:6px;">${article.intro}</p>
+              <p class="muted-line">${article.excerpt}</p>
+              <h3 style="font-size:18px;">Points clés</h3>
+              <ul>${article.highlights.map(item => `<li>${item}</li>`).join('')}</ul>
+              <h3 style="font-size:18px;">Conseils utiles</h3>
+              <ul>${article.tips.map(item => `<li>${item}</li>`).join('')}</ul>
+            </div>
+          </div>
+          <div class="panel" style="padding:18px;">
+            ${photo(article.cls, article.tag, '320px', article.alt)}
+            <p class="muted-line" style="margin-top:14px;">Cet article vous donne les clés pour profiter pleinement de votre séjour à Grand-Bassam, avec un programme simple à suivre.</p>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  return `
+    <section aria-labelledby="blog-title">
+    <div class="grid" style="grid-template-columns:1.6fr 1fr;gap:24px;">
+      <div class="card">${photo('tex-article1','Guide photo Grand-Bassam','280px','Guide touristique Grand-Bassam')}<div class="body">
+        <span class="eyebrow" style="margin-bottom:6px;">Guide pratique</span>
+        <h3 id="blog-title" style="font-size:19px;">Grand-Bassam, cité balnéaire patrimoine UNESCO : pourquoi visiter cette ville ?</h3>
+        <p class="meta">Découvrez les meilleurs moments pour profiter de la plage, du patrimoine et des expériences locales à Grand-Bassam.</p>
+        <p class="muted-line">Grand-Bassam attire les voyageurs pour son charme colonial, ses plages, son artisanat local et son atmosphère paisible à côté d’Abidjan. Une visite bien planifiée permet de combiner détente, culture et découvertes culinaires.</p>
+        <p class="muted-line">Le meilleur moment pour venir est souvent entre novembre et avril, lorsque le climat est plus agréable pour les sorties en plein air et les visites de quartiers historiques.</p>
+      </div></div>
+      <div class="panel">
+        <h3 style="margin-bottom:14px;">Catégories</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <span class="btn btn-outline" style="justify-content:flex-start;">Guides pratiques (10)</span>
+          <span class="btn btn-outline" style="justify-content:flex-start;">Artisans et portraits (16)</span>
+          <span class="btn btn-outline" style="justify-content:flex-start;">Actualités et événements</span>
+        </div>
+        <p class="muted-line" style="margin-top:14px;">Consultez aussi les pages <a onclick="go('activities')" style="color:var(--accent);cursor:pointer;">Activités</a>, <a onclick="go('marketplace')" style="color:var(--accent);cursor:pointer;">Marketplace</a> et <a onclick="go('lodging')" style="color:var(--accent);cursor:pointer;">Hébergement</a>.</p>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>Articles recommandés</h2></div>
+    <div class="grid grid-3">
+      ${blogArticles.map(item => `
+        <div class="card blog-card" data-blog-article-id="${item.id}">
+          ${photo(item.cls, item.tag, '280px', item.alt)}
+          <div class="body">
+            <span class="eyebrow" style="margin-bottom:6px;">${item.category}</span>
+            <h3>${item.title}</h3>
+            <p class="meta">${item.meta}</p>
+            <p class="muted-line">${item.excerpt}</p>
+          </div>
+        </div>`).join('')}
+    </div>
+
+    <div class="section-head"><h2>Conseils pour un séjour réussi</h2></div>
+    <div class="grid grid-2">
+      <div class="panel">
+        <h3>Planifier sa visite</h3>
+        <p class="muted-line">Prévoyez un mélange entre plage, patrimoine et artisanat pour profiter de la ville sans stress.</p>
+        <p class="muted-line">Réservez à l’avance les activités populaires et vérifiez les horaires de visite pour mieux organiser votre journée.</p>
+      </div>
+      <div class="panel">
+        <h3>Choisir son hébergement</h3>
+        <p class="muted-line">Optez pour un logement proche des sites à visiter si vous souhaitez limiter les déplacements et gagner du temps.</p>
+        <p class="muted-line">Un séjour bien positionné permet d’optimiser votre expérience, surtout si vous prévoyez plusieurs activités.</p>
+      </div>
+    </div>
+    </section>`;
+}, 
+mice: () => `
+  <span class="eyebrow">Groupes, scolaires et MICE</span>
+  <h1 style="font-size:30px;">Organisez votre événement à Grand-Bassam</h1>
+  <div class="grid grid-3" style="margin-top:26px;">
+    ${activityCard('tex-groupescolaire','', 'Groupes scolaires', 'Programme pédagogique, transport, encadrement', '', '', '', true, '', "selectMiceOption('groups')")}
+    ${activityCard('tex-seminaire','', 'Séminaires d\'entreprise', 'Salle de conférence, hébergement, team building', '', '', '', true, '', "selectMiceOption('seminars')")}
+    ${activityCard('tex-voyages','', 'Incentives et voyages', 'Circuit personnalisé, expérience VIP', '', '', '', true, '', "selectMiceOption('incentives')")}
+  </div>
+  ${selectedMiceOption ? `
+    <div class="form-panel" style="margin-top:24px;">
+      <h3 style="margin-bottom:12px;">Demande de devis</h3>
+      <p class="muted-line" style="margin-bottom:16px;">Préparation pour : ${selectedMiceOption === 'groups' ? 'Groupes scolaires' : selectedMiceOption === 'seminars' ? 'Séminaires d\'entreprise' : 'Incentives et voyages'}</p>
+      <div class="form-grid">
+        <div class="field"><label>Organisation / École / Entreprise *</label><input id="miceOrg" placeholder="Nom de la structure"></div>
+        <div class="field"><label>Responsable et e-mail *</label><input id="miceContact" placeholder="nom@exemple.com"></div>
+        <div class="field"><label>Type de groupe *</label><input id="miceType" placeholder="Scolaire / Entreprise / Autres"></div>
+        <div class="field"><label>Participants et dates *</label><input id="miceDates" placeholder="Nb. personnes — dates"></div>
+        <div class="field" style="grid-column:1/-1;"><label>Prestations souhaitées</label><input id="miceServices" placeholder="Transport · Hébergement"></div>
+      </div>
+      <div style="margin-top:18px;"><button class="btn btn-fill" onclick="submitMiceRequest()">Envoyer ma demande de devis</button><p style="font-size:12.5px;color:var(--muted);margin-top:10px;">Réponse sous 24 heures ouvrables</p></div>
+    </div>` : `<div class="panel" style="margin-top:24px;"><p class="muted-line">Sélectionnez l’un des formats ci-dessus pour faire apparaître le formulaire de devis.</p></div>`}
+`};
+
+function renderCart(){ const wrap=document.getElementById('cartItems'); if(!wrap) return; wrap.innerHTML = cart.length ? cart.map(i=>`<div class="cart-row"><div><h4>${i.name}</h4><p class="qty">${i.meta}</p><p class="qty" style="margin-top:4px;">${i.type === 'activity' ? 'Réservation' : i.type === 'lodging' ? 'Hébergement' : 'Produit'} · Prix unitaire : ${fmt(i.price)}</p></div><div style="display:flex;align-items:center;gap:10px;"><button class="btn btn-outline" style="padding:6px 10px;font-size:12px;" onclick="changeCartQty('${encodeURIComponent(i.id || i.name)}', -1)">−</button><span class="price">${fmt(i.price*i.qty)}</span><button class="btn btn-fill" style="padding:6px 10px;font-size:12px;" onclick="changeCartQty('${encodeURIComponent(i.id || i.name)}', 1)">+</button><button class="btn btn-outline" style="padding:6px 10px;font-size:12px;" onclick="removeFromCart('${encodeURIComponent(i.id || i.name)}')">Retirer</button></div></div>`).join('') : '<div class="empty-state">Votre panier est vide. Ajoutez une activité ou un produit pour commencer.</div>'; document.getElementById('cartTotal').textContent = fmt(cart.reduce((s,i)=>s+i.price*i.qty,0)); }
+function selectPay(el){ document.querySelectorAll('.pay-opt').forEach(p=>p.classList.remove('selected')); el.classList.add('selected'); }
+function handleActivitySelectionClick(event){
+  const card = event.target.closest('[data-activity-id]');
+  if(!card) return;
+  event.preventDefault();
+  event.stopPropagation();
+  selectedActivityId = card.dataset.activityId;
+  updateActivitiesView();
+}
+function handleBlogCardClick(event){
+  const card = event.target.closest('[data-blog-article-id]');
+  if(!card) return;
+  event.preventDefault();
+  event.stopPropagation();
+  selectedBlogArticleId = card.dataset.blogArticleId;
+  go('blog');
+}
+function bindPageHandlers(name){ if(name==='activities'){ document.querySelectorAll('#activityFilters [data-activity-filter]').forEach((input)=>{ input.onchange = ()=>{ const key=input.dataset.activityFilter; filtersState.activities[key]=input.value; updateActivitiesView(); }; input.oninput = ()=>{ const key=input.dataset.activityFilter; filtersState.activities[key]=input.value; updateActivitiesView(); }; }); updateActivitiesView(); } if(name==='marketplace'){ document.querySelectorAll('#marketplaceFilters [data-marketplace-filter]').forEach((input)=>{ input.onchange = ()=>{ const key=input.dataset.marketplaceFilter; filtersState.marketplace[key]=input.value; updateMarketplaceView(); }; input.oninput = ()=>{ const key=input.dataset.marketplaceFilter; filtersState.marketplace[key]=input.value; updateMarketplaceView(); }; }); updateMarketplaceView(); } if(name==='lodging'){ document.querySelectorAll('#lodgingFilters [data-lodging-filter]').forEach((input)=>{ input.onchange = ()=>{ const key=input.dataset.lodgingFilter; filtersState.lodging[key]=input.value; updateLodgingView(); }; input.oninput = ()=>{ const key=input.dataset.lodgingFilter; filtersState.lodging[key]=input.value; updateLodgingView(); }; }); updateLodgingView(); } }
+document.addEventListener('click', handleCartActionClick);
+document.addEventListener('click', handleActivitySelectionClick);
+document.addEventListener('click', handleBlogCardClick);
+function setPageMetadata(pageName){
+  const seoData = {
+    home: {title:'Grand-Bassam | Activités, artisanat et séjour au bord de la mer', description:'Réservez des activités, produits artisanaux et hébergements à Grand-Bassam, cité balnéaire UNESCO.'},
+    discover: {title:'Découvrir Grand-Bassam | Patrimoine, plage et culture', description:'Découvrez les sites historiques, plages et expériences culturelles de Grand-Bassam.'},
+    activities: {title:'Activités et services à Grand-Bassam | Réservation en ligne', description:'Réservez des visites guidées, ateliers et expériences locales à Grand-Bassam.'},
+    activity: {title:'Activité à Grand-Bassam | Détail de l’offre', description:'Découvrez les détails d’une activité à réserver à Grand-Bassam.'},
+    marketplace: {title:'Marketplace artisanale Grand-Bassam | Produits locaux', description:'Achetez des produits artisanaux et souvenirs faits main à Grand-Bassam.'},
+    product: {title:'Produit artisanale Grand-Bassam | Détail du produit', description:'Découvrez les détails, prix et image d’un produit artisanal à Grand-Bassam.'},
+    lodging: {title:'Hébergement et restauration à Grand-Bassam', description:'Trouver un hébergement et des restaurants à Grand-Bassam pour votre séjour.'},
+    lodgingdetail: {title:'Offre de séjour à Grand-Bassam | Détail', description:'Découvrez les détails d’un hébergement ou d’une offre de restauration à Grand-Bassam.'},
+    blog: {title:'Blog Grand-Bassam | Guides et actualités', description:'Découvrez des guides pratiques et actualités autour de Grand-Bassam.'},
+    mice: {title:'MICE Grand-Bassam | Groupes et événements', description:'Organisez séminaires, groupes scolaires et événements à Grand-Bassam.'},
+    artisan: {title:'Espace artisan Grand-Bassam | Vendre en ligne', description:'Publiez vos produits artisanaux et développez votre visibilité à Grand-Bassam.'},
+    cart: {title:'Panier Grand-Bassam | Réservation et paiement', description:'Finalisez votre réservation d’activités, produits et hébergements à Grand-Bassam.'}
+  };
+  const data = seoData[pageName] || seoData.home;
+  document.title = data.title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc) metaDesc.setAttribute('content', data.description);
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if(canonical) canonical.setAttribute('href', `./index.html?view=${pageName}`);
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if(ogTitle) ogTitle.setAttribute('content', data.title);
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if(ogDesc) ogDesc.setAttribute('content', data.description);
+}
+function go(name){
+  if(name !== 'cart') checkoutStage = 'cart';
+  if(name === 'artisan' && !currentUser){ showToast('Vous devez être connecté pour accéder à l’espace artisan'); go('account'); return; }
+  const app=document.getElementById('app');
+  app.innerHTML = pages[name]();
+  document.querySelectorAll('#navlinks a').forEach(a=>a.classList.toggle('active', a.dataset.p===name));
+  document.getElementById('mobileNav').style.display='none';
+  setPageMetadata(name);
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(name==='cart') renderCart();
+  if(name==='artisan'){ requestAnimationFrame(syncArtisanForm); }
+  bindPageHandlers(name);
+}
+async function initApp(){
+  currentUser = loadCurrentUser();
+  await loadCatalog();
+  updateCartBadge();
+  updateAuthNav();
+  go('home');
+}
+
+initApp();
+</script>
+</body>
+</html>
