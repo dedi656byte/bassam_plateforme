@@ -124,7 +124,7 @@
   }
   @media (max-width:600px){
     .btn span.long{display:none;}
-    .brand .word span{display:none;}
+    /* .brand .word span{display:none;} */
     .mainnav .shell{padding:12px 14px;}
     .btn{padding:10px 16px;font-size:13px;}
     .filters{grid-template-columns:1fr;}
@@ -198,7 +198,7 @@
   .hero h1{font-size:38px;line-height:1.12;color:#FBF7EC;}
   .hero p{margin-top:14px;color:#DCD3BF;font-size:15px;max-width:480px;line-height:1.6;}
   .hero .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;}
-  @media (max-width:640px){.hero h1{font-size:28px;} .hero .content{padding:30px 22px;}}
+  @media (max-width:640px){.hero h1{font-size:28px;} .hero .content{padding:30px 22px;} .hero{border-radius: 0px;}}
 
   /* ---------- filters ---------- */
   .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:20px;margin-bottom:28px;}
@@ -276,6 +276,16 @@
   .blog-card{cursor:pointer;transition:.18s;}
   .blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
   .blog-card.active{border-color:var(--accent);box-shadow:0 10px 24px -12px rgba(184,83,46,.4);}
+  .blog-hero-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.9fr);gap:22px;align-items:start;}
+  .blog-guide-card{overflow:hidden;}
+  .blog-guide-card .body{padding:24px 24px 26px;}
+  .blog-side-panel{padding:18px 18px 20px;background:var(--surface-alt);border:1px solid var(--line-soft);border-radius:var(--radius);box-shadow:none;}
+  .blog-side-panel h3{font-size:17px;margin-bottom:12px;color:var(--accent-dark);}
+  .blog-side-list{display:flex;flex-direction:column;gap:8px;}
+  .blog-side-list .btn{justify-content:flex-start;padding:9px 12px;border-radius:999px;font-size:13px;}
+  .blog-side-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+  .blog-side-links a{font-size:13px;padding:6px 10px;border-radius:999px;background:var(--surface);color:var(--accent);border:1px solid var(--line-soft);}
+  .blog-side-links a:hover{background:var(--surface-alt);}
   .blog-article-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;}
   .blog-article-view{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start;}
   .blog-article-view .detail-body{display:flex;flex-direction:column;gap:12px;}
@@ -286,7 +296,7 @@
   .product-detail .info{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:24px;}
   .product-detail .info .meta-list{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;}
   .product-detail .info .meta-list span{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:var(--surface-alt);color:var(--accent-dark);font-size:12px;font-weight:700;}
-  @media (max-width:760px){.blog-article-view{grid-template-columns:1fr;}.product-detail{grid-template-columns:1fr;}}
+  @media (max-width:760px){.blog-hero-layout{grid-template-columns:1fr;gap:16px;}.blog-side-panel{padding:16px;}.blog-side-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;}.blog-side-list .btn{justify-content:center;text-align:center;}.blog-article-view{grid-template-columns:1fr;}.product-detail{grid-template-columns:1fr;}}
   .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--header);color:#F6F1E4;padding:13px 24px;border-radius:999px;font-size:13.5px;font-weight:700;box-shadow:0 12px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:.25s;z-index:100;}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
   .account-shell{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start;}
@@ -1048,7 +1058,7 @@ function renderMarketplacePage(){ return `
     <div class="field"><label>${currentLang === 'en' ? 'Search' : 'Recherche'}</label><input data-marketplace-filter="search" placeholder="${t('searchProduct')}"></div>
     <div class="field"><label>${t('categoryLabel')}</label><select data-marketplace-filter="category"><option value="all">${t('allCategories')}</option><option value="ceramics">${t('ceramics')}</option><option value="textiles">${t('textiles')}</option><option value="art">${t('art')}</option><option value="jewelry">${t('jewelry')}</option><option value="gastronomy">${t('localGastronomy')}</option></select></div>
     <div class="field"><label>${t('priceLabel')}</label><select data-marketplace-filter="price"><option value="all">${t('allBudgets')}</option><option value="under5">&lt; 5k FCFA</option><option value="5to25">5k – 25k FCFA</option><option value="over25">&gt; 25k FCFA</option></select></div>
-    <div class="field"><label>${t('artisanLabel')}</label><select data-marketplace-filter="artisan"><option value="all">${t('allArtisans')}</option><option value="Kouamé T.">Kouamé T.</option><option value="Fatou S.">Fatou S.</option><option value="Diallo K.">Diallo K.</option><option value="Marie A.">Marie A.</option><option value="Brou E.">Brou E.</option></select></div>
+    <!--<div class="field"><label>${t('artisanLabel')}</label><select data-marketplace-filter="artisan"><option value="all">${t('allArtisans')}</option><option value="Kouamé T.">Kouamé T.</option><option value="Fatou S.">Fatou S.</option><option value="Diallo K.">Diallo K.</option><option value="Marie A.">Marie A.</option><option value="Brou E.">Brou E.</option></select></div>-->
   </div>
   <p class="filter-summary" id="marketplaceSummary"></p>
   <div class="grid grid-3" id="marketplaceResults"></div>
@@ -1110,7 +1120,8 @@ function renderLodgingPage(){ return `
     <div class="field"><label>${t('arrival')}</label><input type="date" data-lodging-filter="arrival"></div>
     <div class="field"><label>${t('departure')}</label><input type="date" data-lodging-filter="departure"></div>
     <div class="field"><label>${t('people')}</label><select data-lodging-filter="people"><option value="2">2 ${currentLang === 'en' ? 'adults' : 'adultes'}</option><option value="4">4 ${currentLang === 'en' ? 'adults' : 'adultes'}</option><option value="6">6 ${currentLang === 'en' ? 'adults' : 'adultes'}</option></select></div>
-    <div class="field"><label>${t('budget')}</label><select data-lodging-filter="budget"><option value="all">${t('budgetAll')}</option><option value="low">${t('budgetLow')}</option><option value="mid">${t('budgetMid')}</option><option value="high">${t('budgetHigh')}</option></select></div>
+    <!--<div class="field"><label>${t('budget')}</label><select data-lodging-filter="budget"><option value="all">${t('budgetAll')}</option><option value="low">${t('budgetLow')}</option><option value="mid">${t('budgetMid')}</option><option value="high">${t('budgetHigh')}</option></select></div>-->
+    <div class="field"><label>${t('budget')}</label><select data-lodging-filter="budget"><option value="all">${currentLang === 'en' ?' budgetAll': 'Tout budgets'}</option><option value="low">${currentLang === 'en' ? 'budgetLow' : 'Économique'}</option><option value="mid">${currentLang === 'en' ? 'budgetMid' : 'Standard'}</option><option value="high">${currentLang === 'en' ? 'budgetHigh' : 'Haut de gamme'}</option></select></div>
   </div>
   <p class="filter-summary" id="lodgingSummary"></p>
   <div class="section-head"><h2>${t('accommodations')}</h2></div>
@@ -1124,7 +1135,7 @@ function renderActivityDetailPage(){
   return `
     <section aria-labelledby="activity-detail-title">
       <div class="blog-article-nav">
-        <button class="btn btn-outline" onclick="go('activities')">← ${t('backToActivities')}</button>
+        <button class="btn btn-outline" onclick="go('activities')">${t('backToActivities')}</button>
         <span class="pill">${t(activity.category) || activity.category}</span>
       </div>
       <div class="product-detail">
@@ -1408,23 +1419,27 @@ blog: () => {
 
   return `
     <section aria-labelledby="blog-title">
-    <div class="grid" style="grid-template-columns:1.6fr 1fr;gap:24px;">
-      <div class="card">${photo('tex-article1','Guide photo Grand-Bassam','280px','Guide touristique Grand-Bassam')}<div class="body">
+    <div class="blog-hero-layout">
+      <div class="card blog-guide-card">${photo('tex-article1','Guide photo Grand-Bassam','280px','Guide touristique Grand-Bassam')}<div class="body">
         <span class="eyebrow" style="margin-bottom:6px;">Guide pratique</span>
         <h3 id="blog-title" style="font-size:19px;">Grand-Bassam, cité balnéaire patrimoine UNESCO : pourquoi visiter cette ville ?</h3>
         <p class="meta">Découvrez les meilleurs moments pour profiter de la plage, du patrimoine et des expériences locales à Grand-Bassam.</p>
         <p class="muted-line">Grand-Bassam attire les voyageurs pour son charme colonial, ses plages, son artisanat local et son atmosphère paisible à côté d’Abidjan. Une visite bien planifiée permet de combiner détente, culture et découvertes culinaires.</p>
         <p class="muted-line">Le meilleur moment pour venir est souvent entre novembre et avril, lorsque le climat est plus agréable pour les sorties en plein air et les visites de quartiers historiques.</p>
       </div></div>
-      <div class="panel">
-        <h3 style="margin-bottom:14px;">Catégories</h3>
-        <div style="display:flex;flex-direction:column;gap:10px;">
-          <span class="btn btn-outline" style="justify-content:flex-start;">Guides pratiques (10)</span>
-          <span class="btn btn-outline" style="justify-content:flex-start;">Artisans et portraits (16)</span>
-          <span class="btn btn-outline" style="justify-content:flex-start;">Actualités et événements</span>
+      <aside class="panel blog-side-panel">
+        <h3>Catégories</h3>
+        <div class="blog-side-list">
+          <span class="btn btn-outline">Guides pratiques (10)</span>
+          <span class="btn btn-outline">Artisans et portraits (16)</span>
+          <span class="btn btn-outline">Actualités et événements</span>
         </div>
-        <p class="muted-line" style="margin-top:14px;">Consultez aussi les pages <a onclick="go('activities')" style="color:var(--accent);cursor:pointer;">Activités</a>, <a onclick="go('marketplace')" style="color:var(--accent);cursor:pointer;">Marketplace</a> et <a onclick="go('lodging')" style="color:var(--accent);cursor:pointer;">Hébergement</a>.</p>
-      </div>
+        <div class="blog-side-links">
+          <a onclick="go('activities')">Activités</a>
+          <a onclick="go('marketplace')">Marketplace</a>
+          <a onclick="go('lodging')">Hébergement</a>
+        </div>
+      </aside>
     </div>
 
     <div class="section-head"><h2>Articles recommandés</h2></div>
